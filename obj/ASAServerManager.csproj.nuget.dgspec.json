@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\ASA-Manager\\ASAServerManager\\ASAServerManager.csproj": {}
+  },
+  "projects": {
+    "G:\\ASA-Manager\\ASAServerManager\\ASAServerManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ASA-Manager\\ASAServerManager\\ASAServerManager.csproj",
+        "projectName": "ASAServerManager",
+        "projectPath": "G:\\ASA-Manager\\ASAServerManager\\ASAServerManager.csproj",
+        "packagesPath": "C:\\Users\\Twix\\.nuget\\packages\\",
+        "outputPath": "G:\\ASA-Manager\\ASAServerManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Twix\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Microsoft.Windows.Console.ConPTY": {
+              "target": "Package",
+              "version": "[1.24.260710001, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

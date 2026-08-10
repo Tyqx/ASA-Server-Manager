@@ -1,0 +1,505 @@
+
+
+[2026-08-09 21:22:24] Client version: 1785799152
+[2026-08-09 21:22:24] Loading Steam API...
+[2026-08-09 21:22:24] OK
+[2026-08-09 21:22:24] Unloading Steam API...
+[2026-08-09 21:22:24] OK
+
+
+[2026-08-09 21:23:40] Client version: 1785799152
+[2026-08-09 21:23:40] Loading Steam API...
+[2026-08-09 21:23:40] OK
+[2026-08-09 21:23:40] Unloading Steam API...
+[2026-08-09 21:23:40] OK
+
+
+[2026-08-09 21:29:17] Client version: 1785799152
+[2026-08-09 21:29:17] Loading Steam API...
+[2026-08-09 21:29:17] OK
+[2026-08-09 21:29:17] 
+Connecting anonymously to Steam Public...
+[2026-08-09 21:29:21] OK
+[2026-08-09 21:29:21] Waiting for client config...
+[2026-08-09 21:29:21] OK
+[2026-08-09 21:29:21] Waiting for user info...
+[2026-08-09 21:29:24] OK
+[2026-08-09 21:29:25] ERROR! Failed to install app '2430930' (Missing configuration)
+[2026-08-09 21:29:25] Unloading Steam API...
+[2026-08-09 21:29:25] OK
+
+
+[2026-08-09 21:30:59] Client version: 1785799152
+[2026-08-09 21:30:59] Loading Steam API...
+[2026-08-09 21:30:59] OK
+[2026-08-09 21:30:59] 
+Connecting anonymously to Steam Public...
+[2026-08-09 21:31:00] OK
+[2026-08-09 21:31:00] Waiting for client config...
+[2026-08-09 21:31:01] OK
+[2026-08-09 21:31:01] Waiting for user info...
+[2026-08-09 21:31:01] OK
+[2026-08-09 21:31:01] Please use force_install_dir before logon!
+[2026-08-09 21:31:03]  Update state (0x61) downloading, progress: 0.00 (0 / 12836053849)
+[2026-08-09 21:31:05]  Update state (0x61) downloading, progress: 0.91 (117175842 / 12836053849)
+[2026-08-09 21:31:07]  Update state (0x61) downloading, progress: 6.94 (890709474 / 12836053849)
+[2026-08-09 21:31:09]  Update state (0x61) downloading, progress: 11.87 (1523585277 / 12836053849)
+[2026-08-09 21:31:12]  Update state (0x61) downloading, progress: 16.46 (2112834267 / 12836053849)
+[2026-08-09 21:31:14]  Update state (0x61) downloading, progress: 20.32 (2608212699 / 12836053849)
+[2026-08-09 21:31:16]  Update state (0x61) downloading, progress: 23.40 (3003899592 / 12836053849)
+[2026-08-09 21:31:18]  Update state (0x61) downloading, progress: 26.81 (3441155752 / 12836053849)
+[2026-08-09 21:31:20]  Update state (0x61) downloading, progress: 30.68 (3938600376 / 12836053849)
+[2026-08-09 21:31:22]  Update state (0x61) downloading, progress: 34.36 (4410459368 / 12836053849)
+[2026-08-09 21:31:24]  Update state (0x61) downloading, progress: 38.25 (4909302915 / 12836053849)
+[2026-08-09 21:31:26]  Update state (0x61) downloading, progress: 41.46 (5321393150 / 12836053849)
+[2026-08-09 21:31:28]  Update state (0x61) downloading, progress: 45.14 (5793898942 / 12836053849)
+[2026-08-09 21:31:30]  Update state (0x61) downloading, progress: 48.84 (6268904514 / 12836053849)
+[2026-08-09 21:31:32]  Update state (0x61) downloading, progress: 52.93 (6794213815 / 12836053849)
+[2026-08-09 21:31:34]  Update state (0x61) downloading, progress: 56.34 (7231911815 / 12836053849)
+[2026-08-09 21:31:36]  Update state (0x61) downloading, progress: 59.92 (7691611937 / 12836053849)
+[2026-08-09 21:31:38]  Update state (0x61) downloading, progress: 63.74 (8181924857 / 12836053849)
+[2026-08-09 21:31:40]  Update state (0x61) downloading, progress: 67.43 (8655881988 / 12836053849)
+[2026-08-09 21:31:42]  Update state (0x61) downloading, progress: 71.97 (9237580047 / 12836053849)
+[2026-08-09 21:31:44]  Update state (0x61) downloading, progress: 76.03 (9759770463 / 12836053849)
+[2026-08-09 21:31:46]  Update state (0x61) downloading, progress: 80.49 (10331937859 / 12836053849)
+[2026-08-09 21:31:48]  Update state (0x61) downloading, progress: 85.56 (10982417464 / 12836053849)
+[2026-08-09 21:31:50]  Update state (0x61) downloading, progress: 90.93 (11671794792 / 12836053849)
+[2026-08-09 21:31:52]  Update state (0x61) downloading, progress: 97.71 (12542626731 / 12836053849)
+[2026-08-09 21:31:54]  Update state (0x61) downloading, progress: 99.75 (12803481945 / 12836053849)
+[2026-08-09 21:31:56]  Update state (0x81) verifying update, progress: 6.65 (854156883 / 12836053849)
+[2026-08-09 21:31:58]  Update state (0x81) verifying update, progress: 16.12 (2069172032 / 12836053849)
+[2026-08-09 21:32:00]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-08-09 21:32:00] Success! App '2430930' fully installed.
+[2026-08-09 21:32:00] Unloading Steam API...
+[2026-08-09 21:32:00] OK
+
+
+[2026-08-09 21:32:25] Client version: 1785799152
+[2026-08-09 21:32:25] Loading Steam API...
+[2026-08-09 21:32:25] OK
+[2026-08-09 21:32:25] 
+Connecting anonymously to Steam Public...
+[2026-08-09 21:32:26] OK
+[2026-08-09 21:32:26] Waiting for client config...
+[2026-08-09 21:32:27] OK
+[2026-08-09 21:32:27] Waiting for user info...
+[2026-08-09 21:32:27] OK
+[2026-08-09 21:32:27] Please use force_install_dir before logon!
+[2026-08-09 21:32:29]  Update state (0x61) downloading, progress: 0.50 (64647928 / 12836053849)
+[2026-08-09 21:32:31]  Update state (0x61) downloading, progress: 5.27 (676435187 / 12836053849)
+[2026-08-09 21:32:33]  Update state (0x61) downloading, progress: 10.44 (1340207984 / 12836053849)
+[2026-08-09 21:32:35]  Update state (0x61) downloading, progress: 14.48 (1858761435 / 12836053849)
+[2026-08-09 21:32:37]  Update state (0x61) downloading, progress: 19.04 (2443963099 / 12836053849)
+[2026-08-09 21:32:40]  Update state (0x61) downloading, progress: 22.87 (2935446235 / 12836053849)
+[2026-08-09 21:32:42]  Update state (0x61) downloading, progress: 26.59 (3413508811 / 12836053849)
+[2026-08-09 21:32:44]  Update state (0x61) downloading, progress: 30.13 (3868124824 / 12836053849)
+[2026-08-09 21:32:46]  Update state (0x61) downloading, progress: 33.83 (4342081016 / 12836053849)
+[2026-08-09 21:32:48]  Update state (0x61) downloading, progress: 38.18 (4900972439 / 12836053849)
+[2026-08-09 21:32:50]  Update state (0x61) downloading, progress: 41.55 (5333074150 / 12836053849)
+[2026-08-09 21:32:52]  Update state (0x61) downloading, progress: 44.67 (5734062358 / 12836053849)
+[2026-08-09 21:32:54]  Update state (0x61) downloading, progress: 47.92 (6150567254 / 12836053849)
+[2026-08-09 21:32:56]  Update state (0x61) downloading, progress: 51.53 (6614852721 / 12836053849)
+[2026-08-09 21:32:58]  Update state (0x61) downloading, progress: 54.96 (7054927173 / 12836053849)
+[2026-08-09 21:33:00]  Update state (0x61) downloading, progress: 58.35 (7490232287 / 12836053849)
+[2026-08-09 21:33:02]  Update state (0x61) downloading, progress: 61.98 (7955800330 / 12836053849)
+[2026-08-09 21:33:04]  Update state (0x61) downloading, progress: 65.89 (8458147339 / 12836053849)
+[2026-08-09 21:33:06]  Update state (0x61) downloading, progress: 70.06 (8993412869 / 12836053849)
+[2026-08-09 21:33:08]  Update state (0x61) downloading, progress: 73.41 (9422954008 / 12836053849)
+[2026-08-09 21:33:10]  Update state (0x61) downloading, progress: 77.20 (9909054688 / 12836053849)
+[2026-08-09 21:33:12]  Update state (0x61) downloading, progress: 80.40 (10320096352 / 12836053849)
+[2026-08-09 21:33:14]  Update state (0x61) downloading, progress: 83.84 (10761547808 / 12836053849)
+[2026-08-09 21:33:16]  Update state (0x61) downloading, progress: 89.26 (11457802128 / 12836053849)
+[2026-08-09 21:33:18]  Update state (0x61) downloading, progress: 96.04 (12327285824 / 12836053849)
+[2026-08-09 21:33:20]  Update state (0x61) downloading, progress: 99.34 (12751090665 / 12836053849)
+[2026-08-09 21:33:22]  Update state (0x81) verifying update, progress: 6.04 (775335569 / 12836053849)
+[2026-08-09 21:33:23] Work thread 'CContentUpdateContext::m_pCPUTh' is marked exited, but we could not immediately join prior to deleting -- proceeding without join
+[2026-08-09 21:33:24]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-08-09 21:33:24] Success! App '2430930' fully installed.
+[2026-08-09 21:33:24] Unloading Steam API...
+[2026-08-09 21:33:24] Work thread 'CHTTPClientThreadPool:2' is marked exited, but we could not immediately join prior to deleting -- proceeding without join
+[2026-08-09 21:33:24] OK
+
+
+[2026-08-09 21:37:34] Client version: 1785799152
+[2026-08-09 21:37:34] Loading Steam API...
+[2026-08-09 21:37:34] OK
+[2026-08-09 21:37:34] 
+Connecting anonymously to Steam Public...
+[2026-08-09 21:37:35] OK
+[2026-08-09 21:37:35] Waiting for client config...
+[2026-08-09 21:37:36] OK
+[2026-08-09 21:37:36] Waiting for user info...
+[2026-08-09 21:37:36] OK
+[2026-08-09 21:37:36] Please use force_install_dir before logon!
+[2026-08-09 21:37:38]  Update state (0x61) downloading, progress: 0.50 (64647928 / 12836053849)
+[2026-08-09 21:37:40]  Update state (0x61) downloading, progress: 5.06 (649176426 / 12836053849)
+[2026-08-09 21:37:42]  Update state (0x61) downloading, progress: 8.61 (1105702546 / 12836053849)
+[2026-08-09 21:37:44]  Update state (0x61) downloading, progress: 12.33 (1583006427 / 12836053849)
+[2026-08-09 21:37:46]  Update state (0x61) downloading, progress: 15.07 (1934594779 / 12836053849)
+[2026-08-09 21:37:48]  Update state (0x61) downloading, progress: 18.57 (2383461418 / 12836053849)
+[2026-08-09 21:37:51]  Update state (0x61) downloading, progress: 22.65 (2906967034 / 12836053849)
+[2026-08-09 21:37:53]  Update state (0x61) downloading, progress: 26.10 (3350682618 / 12836053849)
+[2026-08-09 21:37:55]  Update state (0x61) downloading, progress: 28.34 (3637904378 / 12836053849)
+[2026-08-09 21:37:57]  Update state (0x61) downloading, progress: 32.44 (4164510554 / 12836053849)
+[2026-08-09 21:37:59]  Update state (0x61) downloading, progress: 35.88 (4605633779 / 12836053849)
+[2026-08-09 21:38:01]  Update state (0x61) downloading, progress: 39.05 (5013064176 / 12836053849)
+[2026-08-09 21:38:03]  Update state (0x61) downloading, progress: 42.90 (5507013055 / 12836053849)
+[2026-08-09 21:38:05]  Update state (0x61) downloading, progress: 46.60 (5982018239 / 12836053849)
+[2026-08-09 21:38:07]  Update state (0x61) downloading, progress: 49.46 (6348142782 / 12836053849)
+[2026-08-09 21:38:09]  Update state (0x61) downloading, progress: 54.28 (6967706702 / 12836053849)
+[2026-08-09 21:38:11]  Update state (0x61) downloading, progress: 57.64 (7398938445 / 12836053849)
+[2026-08-09 21:38:13]  Update state (0x61) downloading, progress: 61.57 (7902563341 / 12836053849)
+[2026-08-09 21:38:15]  Update state (0x61) downloading, progress: 65.69 (8432420386 / 12836053849)
+[2026-08-09 21:38:17]  Update state (0x61) downloading, progress: 69.65 (8939856629 / 12836053849)
+[2026-08-09 21:38:19]  Update state (0x61) downloading, progress: 72.83 (9348014187 / 12836053849)
+[2026-08-09 21:38:21]  Update state (0x61) downloading, progress: 76.70 (9845022454 / 12836053849)
+[2026-08-09 21:38:23]  Update state (0x61) downloading, progress: 81.47 (10457953722 / 12836053849)
+[2026-08-09 21:38:25]  Update state (0x61) downloading, progress: 86.07 (11048301002 / 12836053849)
+[2026-08-09 21:38:27]  Update state (0x61) downloading, progress: 91.06 (11687929749 / 12836053849)
+[2026-08-09 21:38:29]  Update state (0x61) downloading, progress: 95.75 (12290822774 / 12836053849)
+[2026-08-09 21:38:31]  Update state (0x61) downloading, progress: 99.49 (12771042137 / 12836053849)
+[2026-08-09 21:38:33]  Update state (0x81) verifying update, progress: 7.15 (917997821 / 12836053849)
+[2026-08-09 21:38:35] Work thread 'CContentUpdateContext::m_pCPUTh' is marked exited, but we could not immediately join prior to deleting -- proceeding without join
+[2026-08-09 21:38:35]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-08-09 21:38:35] Success! App '2430930' fully installed.
+[2026-08-09 21:38:35] Unloading Steam API...
+[2026-08-09 21:38:35] OK
+
+
+[2026-08-09 21:48:19] Client version: 1785799152
+[2026-08-09 21:48:19] Loading Steam API...
+[2026-08-09 21:48:19] OK
+[2026-08-09 21:48:19] 
+Connecting anonymously to Steam Public...
+[2026-08-09 21:48:20] OK
+[2026-08-09 21:48:20] Waiting for client config...
+[2026-08-09 21:48:21] OK
+[2026-08-09 21:48:21] Waiting for user info...
+[2026-08-09 21:48:21] OK
+[2026-08-09 21:48:21] Please use force_install_dir before logon!
+[2026-08-09 21:48:23]  Update state (0x61) downloading, progress: 0.50 (64647928 / 12836053849)
+[2026-08-09 21:48:25]  Update state (0x61) downloading, progress: 6.07 (778822378 / 12836053849)
+[2026-08-09 21:48:27]  Update state (0x61) downloading, progress: 10.68 (1371246845 / 12836053849)
+[2026-08-09 21:48:29]  Update state (0x61) downloading, progress: 15.17 (1947762941 / 12836053849)
+[2026-08-09 21:48:31]  Update state (0x61) downloading, progress: 19.72 (2531508907 / 12836053849)
+[2026-08-09 21:48:33]  Update state (0x61) downloading, progress: 23.04 (2957378219 / 12836053849)
+[2026-08-09 21:48:35]  Update state (0x61) downloading, progress: 27.13 (3482714763 / 12836053849)
+[2026-08-09 21:48:37]  Update state (0x61) downloading, progress: 30.99 (3977642954 / 12836053849)
+[2026-08-09 21:48:39]  Update state (0x61) downloading, progress: 34.96 (4487251018 / 12836053849)
+[2026-08-09 21:48:41]  Update state (0x61) downloading, progress: 38.28 (4914111598 / 12836053849)
+[2026-08-09 21:48:43]  Update state (0x61) downloading, progress: 41.69 (5351950267 / 12836053849)
+[2026-08-09 21:48:45]  Update state (0x61) downloading, progress: 45.03 (5779990139 / 12836053849)
+[2026-08-09 21:48:47]  Update state (0x61) downloading, progress: 48.38 (6209906251 / 12836053849)
+[2026-08-09 21:48:49]  Update state (0x61) downloading, progress: 51.70 (6636363866 / 12836053849)
+[2026-08-09 21:48:51]  Update state (0x61) downloading, progress: 54.86 (7042161658 / 12836053849)
+[2026-08-09 21:48:53]  Update state (0x61) downloading, progress: 58.76 (7541923571 / 12836053849)
+[2026-08-09 21:48:55]  Update state (0x61) downloading, progress: 62.02 (7960947315 / 12836053849)
+[2026-08-09 21:48:57]  Update state (0x61) downloading, progress: 65.08 (8353115529 / 12836053849)
+[2026-08-09 21:48:59]  Update state (0x61) downloading, progress: 68.51 (8793517273 / 12836053849)
+[2026-08-09 21:49:01]  Update state (0x61) downloading, progress: 72.32 (9283346318 / 12836053849)
+[2026-08-09 21:49:03]  Update state (0x61) downloading, progress: 76.10 (9768351506 / 12836053849)
+[2026-08-09 21:49:05]  Update state (0x61) downloading, progress: 81.52 (10464172472 / 12836053849)
+[2026-08-09 21:49:07]  Update state (0x61) downloading, progress: 85.82 (11015829744 / 12836053849)
+[2026-08-09 21:49:09]  Update state (0x61) downloading, progress: 91.53 (11748555760 / 12836053849)
+[2026-08-09 21:49:11]  Update state (0x61) downloading, progress: 98.31 (12619204488 / 12836053849)
+[2026-08-09 21:49:13]  Update state (0x81) verifying update, progress: 2.23 (285722365 / 12836053849)
+[2026-08-09 21:49:15]  Update state (0x101) committing, progress: 100.00 (12836053849 / 12836053849)
+[2026-08-09 21:49:17]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-08-09 21:49:17] Success! App '2430930' fully installed.
+[2026-08-09 21:49:17] Unloading Steam API...
+[2026-08-09 21:49:17] OK
+
+
+[2026-08-09 21:54:48] Client version: 1785799152
+[2026-08-09 21:54:48] Loading Steam API...
+[2026-08-09 21:54:48] OK
+[2026-08-09 21:54:48] 
+Connecting anonymously to Steam Public...
+[2026-08-09 21:54:49] OK
+[2026-08-09 21:54:49] Waiting for client config...
+[2026-08-09 21:54:50] OK
+[2026-08-09 21:54:50] Waiting for user info...
+[2026-08-09 21:54:50] OK
+[2026-08-09 21:54:50] Please use force_install_dir before logon!
+[2026-08-09 21:54:52]  Update state (0x61) downloading, progress: 0.50 (64647928 / 12836053849)
+[2026-08-09 21:54:54]  Update state (0x61) downloading, progress: 5.67 (727647494 / 12836053849)
+[2026-08-09 21:54:56]  Update state (0x61) downloading, progress: 9.10 (1167710461 / 12836053849)
+[2026-08-09 21:54:58]  Update state (0x61) downloading, progress: 13.60 (1746006269 / 12836053849)
+[2026-08-09 21:55:00]  Update state (0x61) downloading, progress: 16.77 (2152503549 / 12836053849)
+[2026-08-09 21:55:02]  Update state (0x61) downloading, progress: 20.14 (2585731803 / 12836053849)
+[2026-08-09 21:55:04]  Update state (0x61) downloading, progress: 23.85 (3061187291 / 12836053849)
+[2026-08-09 21:55:06]  Update state (0x61) downloading, progress: 27.46 (3525240520 / 12836053849)
+[2026-08-09 21:55:08]  Update state (0x61) downloading, progress: 31.10 (3991857123 / 12836053849)
+[2026-08-09 21:55:10]  Update state (0x61) downloading, progress: 34.52 (4430382867 / 12836053849)
+[2026-08-09 21:55:12]  Update state (0x61) downloading, progress: 37.45 (4806821651 / 12836053849)
+[2026-08-09 21:55:14]  Update state (0x61) downloading, progress: 40.23 (5164474578 / 12836053849)
+[2026-08-09 21:55:16]  Update state (0x61) downloading, progress: 43.67 (5605597743 / 12836053849)
+[2026-08-09 21:55:18]  Update state (0x61) downloading, progress: 47.26 (6065922527 / 12836053849)
+[2026-08-09 21:55:20]  Update state (0x61) downloading, progress: 50.38 (6466200266 / 12836053849)
+[2026-08-09 21:55:22]  Update state (0x61) downloading, progress: 53.47 (6863474180 / 12836053849)
+[2026-08-09 21:55:24]  Update state (0x61) downloading, progress: 56.53 (7256544937 / 12836053849)
+[2026-08-09 21:55:26]  Update state (0x61) downloading, progress: 59.76 (7670738765 / 12836053849)
+[2026-08-09 21:55:28]  Update state (0x61) downloading, progress: 62.69 (8046455266 / 12836053849)
+[2026-08-09 21:55:30]  Update state (0x61) downloading, progress: 66.25 (8503638524 / 12836053849)
+[2026-08-09 21:55:32]  Update state (0x61) downloading, progress: 70.53 (9053409671 / 12836053849)
+[2026-08-09 21:55:34]  Update state (0x61) downloading, progress: 74.42 (9552531847 / 12836053849)
+
+
+[2026-08-09 22:02:28] Client version: 1785799152
+[2026-08-09 22:02:28] Loading Steam API...
+[2026-08-09 22:02:28] OK
+[2026-08-09 22:02:28] 
+Connecting anonymously to Steam Public...
+[2026-08-09 22:02:29] OK
+[2026-08-09 22:02:29] Waiting for client config...
+[2026-08-09 22:02:30] OK
+[2026-08-09 22:02:30] Waiting for user info...
+[2026-08-09 22:02:30] OK
+[2026-08-09 22:02:30] Please use force_install_dir before logon!
+[2026-08-09 22:02:32]  Update state (0x61) downloading, progress: 0.37 (46954232 / 12836053849)
+[2026-08-09 22:02:34]  Update state (0x61) downloading, progress: 1.08 (138716299 / 12836053849)
+[2026-08-09 22:02:36]  Update state (0x61) downloading, progress: 6.95 (891934973 / 12836053849)
+[2026-08-09 22:02:38]  Update state (0x61) downloading, progress: 11.99 (1538753243 / 12836053849)
+[2026-08-09 22:02:40]  Update state (0x61) downloading, progress: 16.49 (2116471515 / 12836053849)
+[2026-08-09 22:02:42]  Update state (0x61) downloading, progress: 20.60 (2644046555 / 12836053849)
+[2026-08-09 22:02:44]  Update state (0x61) downloading, progress: 24.02 (3083207387 / 12836053849)
+[2026-08-09 22:02:46]  Update state (0x61) downloading, progress: 28.27 (3628466891 / 12836053849)
+[2026-08-09 22:02:48]  Update state (0x61) downloading, progress: 31.60 (4056506919 / 12836053849)
+[2026-08-09 22:02:50]  Update state (0x61) downloading, progress: 35.61 (4570891752 / 12836053849)
+[2026-08-09 22:02:52]  Update state (0x61) downloading, progress: 39.16 (5025974019 / 12836053849)
+[2026-08-09 22:02:54]  Update state (0x61) downloading, progress: 42.21 (5418141459 / 12836053849)
+[2026-08-09 22:02:56]  Update state (0x61) downloading, progress: 46.17 (5926788790 / 12836053849)
+[2026-08-09 22:02:58]  Update state (0x61) downloading, progress: 49.96 (6412702357 / 12836053849)
+[2026-08-09 22:03:00]  Update state (0x61) downloading, progress: 53.21 (6830296521 / 12836053849)
+[2026-08-09 22:03:02]  Update state (0x61) downloading, progress: 56.65 (7272188633 / 12836053849)
+[2026-08-09 22:03:04]  Update state (0x61) downloading, progress: 60.38 (7749985988 / 12836053849)
+[2026-08-09 22:03:06]  Update state (0x61) downloading, progress: 64.39 (8265398264 / 12836053849)
+[2026-08-09 22:03:08]  Update state (0x61) downloading, progress: 68.23 (8758045422 / 12836053849)
+[2026-08-09 22:03:10]  Update state (0x61) downloading, progress: 72.35 (9287160215 / 12836053849)
+[2026-08-09 22:03:12]  Update state (0x61) downloading, progress: 75.50 (9691571783 / 12836053849)
+[2026-08-09 22:03:14]  Update state (0x61) downloading, progress: 79.05 (10146654247 / 12836053849)
+[2026-08-09 22:03:16]  Update state (0x61) downloading, progress: 83.70 (10744326007 / 12836053849)
+[2026-08-09 22:03:18]  Update state (0x61) downloading, progress: 87.44 (11223294027 / 12836053849)
+[2026-08-09 22:03:20]  Update state (0x61) downloading, progress: 93.57 (12010969985 / 12836053849)
+[2026-08-09 22:03:22]  Update state (0x61) downloading, progress: 99.14 (12725827497 / 12836053849)
+[2026-08-09 22:03:24]  Update state (0x81) verifying update, progress: 5.21 (668424445 / 12836053849)
+[2026-08-09 22:03:26]  Update state (0x81) verifying update, progress: 15.39 (1975912701 / 12836053849)
+[2026-08-09 22:03:26] Work thread 'CContentUpdateContext::m_pCPUTh' is marked exited, but we could not immediately join prior to deleting -- proceeding without join
+[2026-08-09 22:03:28]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-08-09 22:03:28] Success! App '2430930' fully installed.
+[2026-08-09 22:03:28] Unloading Steam API...
+[2026-08-09 22:03:28] OK
+
+
+[2026-08-09 22:05:42] Client version: 1785799152
+[2026-08-09 22:05:42] Loading Steam API...
+[2026-08-09 22:05:42] OK
+[2026-08-09 22:05:43] 
+Connecting anonymously to Steam Public...
+[2026-08-09 22:05:44] OK
+[2026-08-09 22:05:44] Waiting for client config...
+[2026-08-09 22:05:45] OK
+[2026-08-09 22:05:45] Waiting for user info...
+[2026-08-09 22:05:45] OK
+[2026-08-09 22:05:45] Please use force_install_dir before logon!
+[2026-08-09 22:05:47]  Update state (0x61) downloading, progress: 0.50 (64647928 / 12836053849)
+[2026-08-09 22:05:49]  Update state (0x61) downloading, progress: 5.65 (725047585 / 12836053849)
+[2026-08-09 22:05:51]  Update state (0x61) downloading, progress: 10.82 (1388234037 / 12836053849)
+[2026-08-09 22:05:53]  Update state (0x61) downloading, progress: 15.63 (2006160091 / 12836053849)
+[2026-08-09 22:05:55]  Update state (0x61) downloading, progress: 19.40 (2490182363 / 12836053849)
+[2026-08-09 22:05:57]  Update state (0x61) downloading, progress: 23.26 (2985034443 / 12836053849)
+[2026-08-09 22:05:59]  Update state (0x61) downloading, progress: 26.75 (3433501690 / 12836053849)
+[2026-08-09 22:06:01]  Update state (0x61) downloading, progress: 30.47 (3911035802 / 12836053849)
+[2026-08-09 22:06:03]  Update state (0x61) downloading, progress: 34.53 (4431676266 / 12836053849)
+[2026-08-09 22:06:05]  Update state (0x61) downloading, progress: 37.89 (4863944960 / 12836053849)
+[2026-08-09 22:06:07]  Update state (0x61) downloading, progress: 41.71 (5354400795 / 12836053849)
+[2026-08-09 22:06:09]  Update state (0x61) downloading, progress: 45.55 (5846182763 / 12836053849)
+[2026-08-09 22:06:11]  Update state (0x61) downloading, progress: 49.17 (6311516710 / 12836053849)
+[2026-08-09 22:06:13]  Update state (0x61) downloading, progress: 52.76 (6772247940 / 12836053849)
+[2026-08-09 22:06:15]  Update state (0x61) downloading, progress: 56.76 (7286289588 / 12836053849)
+[2026-08-09 22:06:17]  Update state (0x61) downloading, progress: 60.46 (7761112431 / 12836053849)
+[2026-08-09 22:06:19]  Update state (0x61) downloading, progress: 63.80 (8189257588 / 12836053849)
+[2026-08-09 22:06:21]  Update state (0x61) downloading, progress: 67.78 (8700337934 / 12836053849)
+[2026-08-09 22:06:23]  Update state (0x61) downloading, progress: 70.95 (9107185726 / 12836053849)
+[2026-08-09 22:06:25]  Update state (0x61) downloading, progress: 75.78 (9726876446 / 12836053849)
+[2026-08-09 22:06:27]  Update state (0x61) downloading, progress: 80.81 (10372742910 / 12836053849)
+[2026-08-09 22:06:29]  Update state (0x61) downloading, progress: 86.02 (11041448034 / 12836053849)
+[2026-08-09 22:06:31]  Update state (0x61) downloading, progress: 91.98 (11807127672 / 12836053849)
+[2026-08-09 22:06:33]  Update state (0x61) downloading, progress: 97.77 (12549988953 / 12836053849)
+[2026-08-09 22:06:35]  Update state (0x81) verifying update, progress: 2.58 (330714895 / 12836053849)
+[2026-08-09 22:06:37]  Update state (0x81) verifying update, progress: 11.99 (1538865405 / 12836053849)
+[2026-08-09 22:06:38] Work thread 'CContentUpdateContext::m_pCPUTh' is marked exited, but we could not immediately join prior to deleting -- proceeding without join
+[2026-08-09 22:06:38] Work thread 'CContentUpdateContext::m_pCPUTh' is marked exited, but we could not immediately join prior to deleting -- proceeding without join
+[2026-08-09 22:06:39]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-08-09 22:06:39] Success! App '2430930' fully installed.
+[2026-08-09 22:06:39] Unloading Steam API...
+[2026-08-09 22:06:39] OK
+
+
+[2026-08-09 22:07:37] Client version: 1785799152
+[2026-08-09 22:07:37] Loading Steam API...
+[2026-08-09 22:07:37] OK
+[2026-08-09 22:07:37] 
+Connecting anonymously to Steam Public...
+[2026-08-09 22:07:38] OK
+[2026-08-09 22:07:38] Waiting for client config...
+[2026-08-09 22:07:39] OK
+[2026-08-09 22:07:39] Waiting for user info...
+[2026-08-09 22:07:39] OK
+[2026-08-09 22:07:39] Please use force_install_dir before logon!
+[2026-08-09 22:07:41]  Update state (0x61) downloading, progress: 0.50 (64647928 / 12836053849)
+[2026-08-09 22:07:43]  Update state (0x61) downloading, progress: 6.05 (775995187 / 12836053849)
+[2026-08-09 22:07:45]  Update state (0x61) downloading, progress: 11.30 (1451041021 / 12836053849)
+[2026-08-09 22:07:47]  Update state (0x61) downloading, progress: 15.32 (1966999805 / 12836053849)
+[2026-08-09 22:07:49]  Update state (0x61) downloading, progress: 18.88 (2422951997 / 12836053849)
+[2026-08-09 22:07:51]  Update state (0x61) downloading, progress: 22.48 (2885222461 / 12836053849)
+[2026-08-09 22:07:53]  Update state (0x61) downloading, progress: 26.58 (3411632667 / 12836053849)
+[2026-08-09 22:07:55]  Update state (0x61) downloading, progress: 30.31 (3890831899 / 12836053849)
+
+
+[2026-08-09 22:08:41] Client version: 1785799152
+[2026-08-09 22:08:41] Loading Steam API...
+[2026-08-09 22:08:41] OK
+[2026-08-09 22:08:42] 
+Connecting anonymously to Steam Public...
+[2026-08-09 22:08:43] OK
+[2026-08-09 22:08:43] Waiting for client config...
+[2026-08-09 22:08:43] OK
+[2026-08-09 22:08:43] Waiting for user info...
+[2026-08-09 22:08:43] OK
+[2026-08-09 22:08:43] Please use force_install_dir before logon!
+[2026-08-09 22:08:46]  Update state (0x61) downloading, progress: 32.94 (4228007555 / 12836053849)
+[2026-08-09 22:08:48]  Update state (0x61) downloading, progress: 36.92 (4739478487 / 12836053849)
+[2026-08-09 22:08:50]  Update state (0x61) downloading, progress: 40.62 (5213434887 / 12836053849)
+[2026-08-09 22:08:52]  Update state (0x61) downloading, progress: 44.54 (5716751170 / 12836053849)
+[2026-08-09 22:08:54]  Update state (0x61) downloading, progress: 48.06 (6169497834 / 12836053849)
+[2026-08-09 22:08:56]  Update state (0x61) downloading, progress: 51.73 (6640045642 / 12836053849)
+[2026-08-09 22:08:58]  Update state (0x61) downloading, progress: 55.44 (7116195534 / 12836053849)
+[2026-08-09 22:09:00]  Update state (0x61) downloading, progress: 59.65 (7656265762 / 12836053849)
+[2026-08-09 22:09:02]  Update state (0x61) downloading, progress: 64.27 (8250297826 / 12836053849)
+[2026-08-09 22:09:04]  Update state (0x61) downloading, progress: 68.27 (8763248983 / 12836053849)
+[2026-08-09 22:09:06]  Update state (0x61) downloading, progress: 72.22 (9270746940 / 12836053849)
+[2026-08-09 22:09:08]  Update state (0x61) downloading, progress: 76.33 (9798247474 / 12836053849)
+[2026-08-09 22:09:10]  Update state (0x61) downloading, progress: 80.91 (10385702061 / 12836053849)
+[2026-08-09 22:09:12]  Update state (0x61) downloading, progress: 87.60 (11244515869 / 12836053849)
+[2026-08-09 22:09:14]  Update state (0x61) downloading, progress: 92.42 (11863533445 / 12836053849)
+[2026-08-09 22:09:16]  Update state (0x61) downloading, progress: 97.49 (12513748753 / 12836053849)
+[2026-08-09 22:09:18]  Update state (0x81) verifying update, progress: 3.18 (408685496 / 12836053849)
+[2026-08-09 22:09:20]  Update state (0x81) verifying update, progress: 12.78 (1641054461 / 12836053849)
+[2026-08-09 22:09:22]  Update state (0x81) verifying update, progress: 22.21 (2850423515 / 12836053849)
+[2026-08-09 22:09:24]  Update state (0x81) verifying update, progress: 32.70 (4196795099 / 12836053849)
+[2026-08-09 22:09:26]  Update state (0x81) verifying update, progress: 42.58 (5465327463 / 12836053849)
+[2026-08-09 22:09:28]  Update state (0x81) verifying update, progress: 52.02 (6677481499 / 12836053849)
+[2026-08-09 22:09:30]  Update state (0x81) verifying update, progress: 61.89 (7944156852 / 12836053849)
+[2026-08-09 22:09:32]  Update state (0x81) verifying update, progress: 71.23 (9143014679 / 12836053849)
+[2026-08-09 22:09:34]  Update state (0x81) verifying update, progress: 81.01 (10398882487 / 12836053849)
+[2026-08-09 22:09:36]  Update state (0x81) verifying update, progress: 91.50 (11745498600 / 12836053849)
+[2026-08-09 22:09:38] Work thread 'CContentUpdateContext::m_pCPUTh' is marked exited, but we could not immediately join prior to deleting -- proceeding without join
+[2026-08-09 22:09:38] Work thread 'CContentUpdateContext::m_pCPUTh' is marked exited, but we could not immediately join prior to deleting -- proceeding without join
+[2026-08-09 22:09:38]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-08-09 22:09:38] Success! App '2430930' fully installed.
+[2026-08-09 22:09:38] Unloading Steam API...
+[2026-08-09 22:09:38] OK
+
+
+[2026-08-09 22:13:53] Client version: 1785799152
+[2026-08-09 22:13:53] Loading Steam API...
+[2026-08-09 22:13:53] OK
+[2026-08-09 22:13:53] 
+Connecting anonymously to Steam Public...
+[2026-08-09 22:13:54] OK
+[2026-08-09 22:13:54] Waiting for client config...
+[2026-08-09 22:13:54] OK
+[2026-08-09 22:13:54] Waiting for user info...
+[2026-08-09 22:13:54] OK
+[2026-08-09 22:13:54] Please use force_install_dir before logon!
+[2026-08-09 22:13:57]  Update state (0x61) downloading, progress: 0.50 (64647928 / 12836053849)
+[2026-08-09 22:13:59]  Update state (0x61) downloading, progress: 4.93 (632236402 / 12836053849)
+[2026-08-09 22:14:01]  Update state (0x61) downloading, progress: 9.64 (1237678482 / 12836053849)
+[2026-08-09 22:14:03]  Update state (0x61) downloading, progress: 14.31 (1836249819 / 12836053849)
+[2026-08-09 22:14:05]  Update state (0x61) downloading, progress: 18.39 (2360363739 / 12836053849)
+[2026-08-09 22:14:07]  Update state (0x61) downloading, progress: 22.18 (2846833355 / 12836053849)
+[2026-08-09 22:14:09]  Update state (0x61) downloading, progress: 25.27 (3243777752 / 12836053849)
+[2026-08-09 22:14:11]  Update state (0x61) downloading, progress: 28.57 (3667515096 / 12836053849)
+[2026-08-09 22:14:13]  Update state (0x61) downloading, progress: 32.16 (4127808983 / 12836053849)
+[2026-08-09 22:14:15]  Update state (0x61) downloading, progress: 35.77 (4591729803 / 12836053849)
+[2026-08-09 22:14:17]  Update state (0x61) downloading, progress: 39.66 (5091072918 / 12836053849)
+[2026-08-09 22:14:19]  Update state (0x61) downloading, progress: 42.72 (5483240262 / 12836053849)
+[2026-08-09 22:14:21]  Update state (0x61) downloading, progress: 46.37 (5951559333 / 12836053849)
+[2026-08-09 22:14:23]  Update state (0x61) downloading, progress: 50.07 (6426564277 / 12836053849)
+[2026-08-09 22:14:25]  Update state (0x61) downloading, progress: 53.27 (6837605941 / 12836053849)
+[2026-08-09 22:14:27]  Update state (0x61) downloading, progress: 57.11 (7330436901 / 12836053849)
+[2026-08-09 22:14:29]  Update state (0x61) downloading, progress: 60.95 (7823060255 / 12836053849)
+[2026-08-09 22:14:31]  Update state (0x61) downloading, progress: 64.85 (8324279674 / 12836053849)
+[2026-08-09 22:14:33]  Update state (0x61) downloading, progress: 68.54 (8797679150 / 12836053849)
+[2026-08-09 22:14:35]  Update state (0x61) downloading, progress: 72.73 (9335690755 / 12836053849)
+[2026-08-09 22:14:37]  Update state (0x61) downloading, progress: 76.84 (9862861630 / 12836053849)
+[2026-08-09 22:14:39]  Update state (0x61) downloading, progress: 80.28 (10304618338 / 12836053849)
+[2026-08-09 22:14:41]  Update state (0x61) downloading, progress: 84.96 (10905113506 / 12836053849)
+[2026-08-09 22:14:43]  Update state (0x61) downloading, progress: 91.02 (11683139234 / 12836053849)
+[2026-08-09 22:14:45]  Update state (0x61) downloading, progress: 97.70 (12540951976 / 12836053849)
+[2026-08-09 22:14:47]  Update state (0x81) verifying update, progress: 3.62 (464260024 / 12836053849)
+[2026-08-09 22:14:49]  Update state (0x81) verifying update, progress: 13.32 (1709547773 / 12836053849)
+[2026-08-09 22:14:50] Work thread 'CContentUpdateContext::m_pCPUTh' is marked exited, but we could not immediately join prior to deleting -- proceeding without join
+[2026-08-09 22:14:51]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-08-09 22:14:51] Success! App '2430930' fully installed.
+[2026-08-09 22:14:51] Unloading Steam API...
+[2026-08-09 22:14:51] OK
+
+
+[2026-08-09 22:16:27] Client version: 1785799152
+[2026-08-09 22:16:27] Loading Steam API...
+[2026-08-09 22:16:27] OK
+[2026-08-09 22:16:27] 
+Connecting anonymously to Steam Public...
+[2026-08-09 22:16:28] OK
+[2026-08-09 22:16:28] Waiting for client config...
+[2026-08-09 22:16:29] OK
+[2026-08-09 22:16:29] Waiting for user info...
+[2026-08-09 22:16:29] OK
+[2026-08-09 22:16:29] Please use force_install_dir before logon!
+[2026-08-09 22:16:31]  Update state (0x61) downloading, progress: 0.50 (64647928 / 12836053849)
+[2026-08-09 22:16:33]  Update state (0x61) downloading, progress: 5.41 (694155085 / 12836053849)
+[2026-08-09 22:16:35]  Update state (0x61) downloading, progress: 9.61 (1233361149 / 12836053849)
+
+
+[2026-08-09 22:29:44] Client version: 1785799152
+[2026-08-09 22:29:44] Loading Steam API...
+[2026-08-09 22:29:44] OK
+[2026-08-09 22:29:44] 
+Connecting anonymously to Steam Public...
+[2026-08-09 22:29:46] OK
+[2026-08-09 22:29:46] Waiting for client config...
+[2026-08-09 22:29:46] OK
+[2026-08-09 22:29:46] Waiting for user info...
+[2026-08-09 22:29:46] OK
+[2026-08-09 22:29:46] Please use force_install_dir before logon!
+[2026-08-09 22:29:49]  Update state (0x61) downloading, progress: 0.50 (64647928 / 12836053849)
+[2026-08-09 22:29:51]  Update state (0x61) downloading, progress: 5.56 (713923229 / 12836053849)
+[2026-08-09 22:29:53]  Update state (0x61) downloading, progress: 10.57 (1356997662 / 12836053849)
+[2026-08-09 22:29:55]  Update state (0x61) downloading, progress: 14.73 (1890644221 / 12836053849)
+[2026-08-09 22:29:57]  Update state (0x61) downloading, progress: 18.92 (2428240603 / 12836053849)
+[2026-08-09 22:29:59]  Update state (0x61) downloading, progress: 22.88 (2936533723 / 12836053849)
+[2026-08-09 22:30:01]  Update state (0x61) downloading, progress: 27.00 (3465937499 / 12836053849)
+[2026-08-09 22:30:03]  Update state (0x61) downloading, progress: 30.54 (3919970907 / 12836053849)
+[2026-08-09 22:30:05]  Update state (0x61) downloading, progress: 34.51 (4430250354 / 12836053849)
+[2026-08-09 22:30:07]  Update state (0x61) downloading, progress: 38.39 (4928323922 / 12836053849)
+[2026-08-09 22:30:09]  Update state (0x61) downloading, progress: 42.09 (5403050477 / 12836053849)
+[2026-08-09 22:30:11]  Update state (0x61) downloading, progress: 45.42 (5830516669 / 12836053849)
+[2026-08-09 22:30:13]  Update state (0x61) downloading, progress: 48.80 (6263798845 / 12836053849)
+[2026-08-09 22:30:15]  Update state (0x61) downloading, progress: 52.23 (6704177969 / 12836053849)
+[2026-08-09 22:30:17]  Update state (0x61) downloading, progress: 55.69 (7148773921 / 12836053849)
+[2026-08-09 22:30:19]  Update state (0x61) downloading, progress: 58.79 (7545857022 / 12836053849)
+[2026-08-09 22:30:21]  Update state (0x61) downloading, progress: 62.34 (8002410429 / 12836053849)
+[2026-08-09 22:30:23]  Update state (0x61) downloading, progress: 66.23 (8501625149 / 12836053849)
+[2026-08-09 22:30:25]  Update state (0x61) downloading, progress: 70.40 (9036026429 / 12836053849)
+[2026-08-09 22:30:27]  Update state (0x61) downloading, progress: 74.74 (9593913148 / 12836053849)
+[2026-08-09 22:30:29]  Update state (0x61) downloading, progress: 79.83 (10246608583 / 12836053849)
+[2026-08-09 22:30:31]  Update state (0x61) downloading, progress: 85.15 (10929819354 / 12836053849)
+[2026-08-09 22:30:33]  Update state (0x61) downloading, progress: 90.01 (11553661296 / 12836053849)
+[2026-08-09 22:30:35]  Update state (0x61) downloading, progress: 96.61 (12401313153 / 12836053849)
+[2026-08-09 22:30:37]  Update state (0x81) verifying update, progress: 5.21 (668424445 / 12836053849)
+[2026-08-09 22:30:39]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-08-09 22:30:39] Success! App '2430930' fully installed.
+[2026-08-09 22:30:39] Unloading Steam API...
+[2026-08-09 22:30:39] OK

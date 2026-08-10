@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ASAServerManager/1.0.0": {
+        "dependencies": {
+          "Microsoft.Windows.Console.ConPTY": "1.24.260710001"
+        },
+        "runtime": {
+          "ASAServerManager.dll": {}
+        }
+      },
+      "Microsoft.Windows.Console.ConPTY/1.24.260710001": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/conpty.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "1.24.2607.10001"
+          },
+          "runtimes/win-x64/native/conpty.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.24.2607.10001"
+          },
+          "runtimes/win-x86/native/conpty.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.24.2607.10001"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ASAServerManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Windows.Console.ConPTY/1.24.260710001": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JR1xAkZbNnAALBjzFpqSwEx7YZfD1LI228jF9j9cgKknBPCiFy9mpphlgH+TpTN8vajTUpcgg9Miy5Y8eUAH9g==",
+      "path": "microsoft.windows.console.conpty/1.24.260710001",
+      "hashPath": "microsoft.windows.console.conpty.1.24.260710001.nupkg.sha512"
+    }
+  }
+}

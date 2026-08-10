@@ -1,0 +1,794 @@
+
+
+[2026-08-09 21:29:21] Client version: 1785799152
+[2026-08-09 21:29:21] Loaded 0 apps from install folder "g:\test server\steamapps\appmanifest_*.acf".
+[2026-08-09 21:29:21] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:29:25] Failed installing AppID 2430930 (Missing configuration)
+
+
+[2026-08-09 21:31:00] Client version: 1785799152
+[2026-08-09 21:31:00] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 21:31:00] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 21:31:00] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:31:01] Loaded 0 apps from install folder "g:\test server\steamapps\appmanifest_*.acf".
+[2026-08-09 21:31:01] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:31:01] AppID 2430930 state changed : Update Required,
+[2026-08-09 21:31:01] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 21:31:01] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 21:31:01] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 21:31:01] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 21:31:01] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:31:01] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 21:31:02] Got 31 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 21:31:02] Moving to source priority class '3'
+[2026-08-09 21:31:02] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 21:31:02] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 21:31:02] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 21:31:02] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 21:31:02] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 21:31:02] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 21:31:02] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 21:31:02] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 21:31:02] HTTP/2 available
+[2026-08-09 21:31:02] Created ipv4-only http client
+[2026-08-09 21:31:02] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:02] HTTP/2 (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): cache10-iad1.steamcontent.com/depot/1004/manifest/5612541580377302256/5/17486767086027517585 - manifest request received 200 (OK) HTTP response
+[2026-08-09 21:31:03] HTTPS (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:03] HTTP/2 (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): cache5-iad1.steamcontent.com/depot/2430931/manifest/3176100767327618003/5/13627569318704221449 - manifest request received 200 (OK) HTTP response
+[2026-08-09 21:31:03] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:31:03] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 21:31:03] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:31:03] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 21:31:03] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 21:31:03] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:31:03] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 21:31:03] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 21:31:03] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 21:31:03] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 21:31:04] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:04] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:04] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:04] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:04] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:04] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:05] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 21:31:15] Increasing target number of download connections to 9 (rate was 0.000, now 999.847)
+[2026-08-09 21:31:15] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 21:31:16] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:27] Increasing target number of download connections to 10 (rate was 999.847, now 1387.021)
+[2026-08-09 21:31:27] Created download interface of type 'SteamCache' (7) to host cache9-iad1.steamcontent.com (cache9-iad1.steamcontent.com)
+[2026-08-09 21:31:28] HTTPS (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:31:54] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:31:54] AppID 2430930 App update changed : Running Update,Verifying Staged,
+[2026-08-09 21:31:58] Verified 2048 MB in 'G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD', clean bytes tally is now 2048 MB
+[2026-08-09 21:31:58] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:31:58] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:31:58] AppID 2430930 App update changed : Running Update,Committing,
+[2026-08-09 21:31:58] AppID 2430930 starting commit from "g:\test server\steamapps\downloading\2430930" to "g:\test server" : 248 updated, 0 moved, 0 deleted files
+[2026-08-09 21:31:58] AppID 2430930 state changed : Fully Installed,Update Queued,Update Running,
+[2026-08-09 21:31:58] AppID 2430930 finished update, 2 mounted depots (BuildID 24605990) : 1004 (5612541580377302256),2430931 (3176100767327618003),
+[2026-08-09 21:31:58] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:31:58] AppID 2430930 App update changed : None
+[2026-08-09 21:31:58] AppID 2430930 state changed : Fully Installed,Update Queued,
+[2026-08-09 21:31:58] AppID 2430930 state changed : Fully Installed,
+[2026-08-09 21:31:58] AppID 2430930 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:32:00] HTTP/2 (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Closing connection
+
+
+[2026-08-09 21:32:26] Client version: 1785799152
+[2026-08-09 21:32:26] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 21:32:26] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 21:32:26] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:32:27] Loaded 0 apps from install folder "g:\testserver\steamapps\appmanifest_*.acf".
+[2026-08-09 21:32:27] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:32:27] AppID 2430930 state changed : Update Required,
+[2026-08-09 21:32:27] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 21:32:27] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 21:32:27] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 21:32:27] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 21:32:27] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:32:27] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 21:32:27] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:32:27] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 21:32:27] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:32:27] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 21:32:28] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 21:32:28] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:32:28] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 21:32:28] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 21:32:28] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 21:32:28] Got 30 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 21:32:28] Moving to source priority class '3'
+[2026-08-09 21:32:28] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 21:32:28] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 21:32:28] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 21:32:28] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 21:32:28] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 21:32:28] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 21:32:28] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 21:32:28] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 21:32:28] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 21:32:28] HTTP/2 available
+[2026-08-09 21:32:28] Created ipv4-only http client
+[2026-08-09 21:32:28] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:32:28] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:32:29] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:32:29] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:32:29] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:32:29] HTTPS (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:32:29] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:32:29] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:32:29] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 21:32:41] Increasing target number of download connections to 9 (rate was 0.000, now 1267.978)
+[2026-08-09 21:32:41] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 21:32:42] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:33:21] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:33:21] AppID 2430930 App update changed : Running Update,Verifying Staged,
+[2026-08-09 21:33:23] Verified 2048 MB in 'G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD', clean bytes tally is now 2048 MB
+[2026-08-09 21:33:23] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:33:23] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:33:23] AppID 2430930 App update changed : Running Update,Committing,
+[2026-08-09 21:33:23] AppID 2430930 starting commit from "g:\testserver\steamapps\downloading\2430930" to "g:\testserver" : 248 updated, 0 moved, 0 deleted files
+[2026-08-09 21:33:23] AppID 2430930 state changed : Fully Installed,Update Queued,Update Running,
+[2026-08-09 21:33:23] AppID 2430930 finished update, 2 mounted depots (BuildID 24605990) : 1004 (5612541580377302256),2430931 (3176100767327618003),
+[2026-08-09 21:33:23] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:33:23] AppID 2430930 App update changed : None
+[2026-08-09 21:33:23] AppID 2430930 state changed : Fully Installed,Update Queued,
+[2026-08-09 21:33:23] AppID 2430930 state changed : Fully Installed,
+[2026-08-09 21:33:23] AppID 2430930 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-08-09 21:33:24] HTTP/2 (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:33:24] HTTP/2 (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:33:24] HTTP/2 (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:33:24] HTTP/2 (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:33:24] HTTP/2 (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:33:24] HTTP/2 (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:33:24] HTTP/2 (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:33:24] HTTP/2 (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:33:24] HTTP/2 (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Closing connection
+
+
+[2026-08-09 21:37:35] Client version: 1785799152
+[2026-08-09 21:37:35] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 21:37:35] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 21:37:35] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:37:36] Loaded 0 apps from install folder "g:\test server\steamapps\appmanifest_*.acf".
+[2026-08-09 21:37:36] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:37:36] AppID 2430930 state changed : Update Required,
+[2026-08-09 21:37:36] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 21:37:36] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 21:37:36] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 21:37:36] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 21:37:36] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:37:36] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 21:37:36] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:37:36] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 21:37:36] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:37:36] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 21:37:37] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 21:37:37] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:37:37] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 21:37:37] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 21:37:37] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 21:37:37] Got 30 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 21:37:37] Moving to source priority class '3'
+[2026-08-09 21:37:37] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 21:37:37] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 21:37:37] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 21:37:37] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 21:37:37] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 21:37:37] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 21:37:37] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 21:37:37] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 21:37:37] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 21:37:37] HTTP/2 available
+[2026-08-09 21:37:37] Created ipv4-only http client
+[2026-08-09 21:37:37] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:37:37] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:37:37] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:37:37] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:37:38] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:37:38] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:37:38] HTTPS (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:37:38] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:37:38] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 21:37:49] Increasing target number of download connections to 9 (rate was 0.000, now 1030.730)
+[2026-08-09 21:37:49] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 21:37:52] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:38:02] Increasing target number of download connections to 10 (rate was 1030.730, now 1310.099)
+[2026-08-09 21:38:02] Created download interface of type 'SteamCache' (7) to host cache9-iad1.steamcontent.com (cache9-iad1.steamcontent.com)
+[2026-08-09 21:38:02] HTTPS (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:38:31] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:38:31] AppID 2430930 App update changed : Running Update,Verifying Staged,
+[2026-08-09 21:38:34] Verified 2048 MB in 'G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD', clean bytes tally is now 2048 MB
+[2026-08-09 21:38:34] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:38:34] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:38:34] AppID 2430930 App update changed : Running Update,Committing,
+[2026-08-09 21:38:34] AppID 2430930 starting commit from "g:\test server\steamapps\downloading\2430930" to "g:\test server" : 248 updated, 0 moved, 0 deleted files
+[2026-08-09 21:38:35] AppID 2430930 state changed : Fully Installed,Update Queued,Update Running,
+[2026-08-09 21:38:35] AppID 2430930 finished update, 2 mounted depots (BuildID 24605990) : 1004 (5612541580377302256),2430931 (3176100767327618003),
+[2026-08-09 21:38:35] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:38:35] AppID 2430930 App update changed : None
+[2026-08-09 21:38:35] AppID 2430930 state changed : Fully Installed,Update Queued,
+[2026-08-09 21:38:35] AppID 2430930 state changed : Fully Installed,
+[2026-08-09 21:38:35] AppID 2430930 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:38:35] HTTP/2 (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Closing connection
+
+
+[2026-08-09 21:48:20] Client version: 1785799152
+[2026-08-09 21:48:20] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 21:48:20] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 21:48:20] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:48:21] Loaded 0 apps from install folder "g:\test server\steamapps\appmanifest_*.acf".
+[2026-08-09 21:48:21] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:48:21] AppID 2430930 state changed : Update Required,
+[2026-08-09 21:48:21] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 21:48:21] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 21:48:21] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 21:48:21] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 21:48:21] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:48:21] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 21:48:21] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:48:21] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 21:48:21] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:48:21] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 21:48:21] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 21:48:21] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:48:21] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 21:48:21] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 21:48:21] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 21:48:21] Got 31 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 21:48:21] Moving to source priority class '3'
+[2026-08-09 21:48:21] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 21:48:21] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 21:48:21] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 21:48:21] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 21:48:21] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 21:48:21] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 21:48:21] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 21:48:21] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 21:48:21] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 21:48:21] HTTP/2 available
+[2026-08-09 21:48:21] Created ipv4-only http client
+[2026-08-09 21:48:22] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:48:22] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:48:22] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:48:22] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:48:22] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:48:22] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:48:22] HTTPS (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:48:22] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:48:23] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 21:48:34] Increasing target number of download connections to 9 (rate was 0.000, now 1299.168)
+[2026-08-09 21:48:34] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 21:48:36] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 21:49:13] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:49:13] AppID 2430930 App update changed : Running Update,Verifying Staged,
+[2026-08-09 21:49:15] Verified 2048 MB in 'G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD', clean bytes tally is now 2048 MB
+[2026-08-09 21:49:15] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:49:15] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:49:15] AppID 2430930 App update changed : Running Update,Committing,
+[2026-08-09 21:49:15] AppID 2430930 starting commit from "g:\test server\steamapps\downloading\2430930" to "g:\test server" : 248 updated, 0 moved, 0 deleted files
+[2026-08-09 21:49:15] AppID 2430930 state changed : Fully Installed,Update Queued,Update Running,
+[2026-08-09 21:49:15] AppID 2430930 finished update, 2 mounted depots (BuildID 24605990) : 1004 (5612541580377302256),2430931 (3176100767327618003),
+[2026-08-09 21:49:15] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:49:15] AppID 2430930 App update changed : None
+[2026-08-09 21:49:15] AppID 2430930 state changed : Fully Installed,Update Queued,
+[2026-08-09 21:49:15] AppID 2430930 state changed : Fully Installed,
+[2026-08-09 21:49:15] AppID 2430930 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-08-09 21:49:17] HTTP/2 (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:49:17] HTTP/2 (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:49:17] HTTP/2 (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:49:17] HTTP/2 (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:49:17] HTTP/2 (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:49:17] HTTP/2 (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:49:17] HTTP/2 (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:49:17] HTTP/2 (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Closing connection
+[2026-08-09 21:49:17] HTTP/2 (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Closing connection
+
+
+[2026-08-09 21:54:49] Client version: 1785799152
+[2026-08-09 21:54:49] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 21:54:49] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 21:54:49] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:54:50] Loaded 0 apps from install folder "g:\test\steamapps\appmanifest_*.acf".
+[2026-08-09 21:54:50] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 21:54:50] AppID 2430930 state changed : Update Required,
+[2026-08-09 21:54:50] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 21:54:50] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 21:54:50] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 21:54:50] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 21:54:50] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:54:50] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 21:54:50] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:54:50] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 21:54:50] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:54:50] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 21:54:50] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 21:54:50] AppID 2430930 App update changed : Running Update,
+[2026-08-09 21:54:50] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 21:54:50] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 21:54:50] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 21:54:50] Got 32 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 21:54:50] Moving to source priority class '3'
+[2026-08-09 21:54:50] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 21:54:50] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 21:54:50] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 21:54:50] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 21:54:50] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 21:54:50] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 21:54:50] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 21:54:50] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 21:54:50] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 21:54:51] HTTP/2 available
+[2026-08-09 21:54:51] Created ipv4-only http client
+[2026-08-09 21:54:52] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 21:55:03] Increasing target number of download connections to 9 (rate was 0.000, now 998.946)
+[2026-08-09 21:55:03] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 21:55:15] Increasing target number of download connections to 10 (rate was 998.946, now 1291.913)
+[2026-08-09 21:55:15] Created download interface of type 'SteamCache' (7) to host cache9-iad1.steamcontent.com (cache9-iad1.steamcontent.com)
+
+
+[2026-08-09 22:02:29] Client version: 1785799152
+[2026-08-09 22:02:29] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 22:02:29] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 22:02:29] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:02:30] Loaded 0 apps from install folder "g:\new folder\steamapps\appmanifest_*.acf".
+[2026-08-09 22:02:30] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:02:30] AppID 2430930 state changed : Update Required,
+[2026-08-09 22:02:30] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:02:30] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 22:02:30] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:02:30] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 22:02:30] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:02:30] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 22:02:30] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:02:30] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 22:02:30] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:02:30] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 22:02:30] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 22:02:30] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:02:30] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 22:02:30] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 22:02:30] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 22:02:30] Got 30 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 22:02:30] Moving to source priority class '3'
+[2026-08-09 22:02:30] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 22:02:30] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 22:02:30] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 22:02:30] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 22:02:30] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 22:02:30] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 22:02:30] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 22:02:30] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 22:02:30] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 22:02:30] HTTP/2 available
+[2026-08-09 22:02:30] Created ipv4-only http client
+[2026-08-09 22:02:33] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 22:02:43] Increasing target number of download connections to 9 (rate was 0.000, now 1026.162)
+[2026-08-09 22:02:43] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 22:02:55] Increasing target number of download connections to 10 (rate was 1026.162, now 1429.108)
+[2026-08-09 22:02:55] Created download interface of type 'SteamCache' (7) to host cache9-iad1.steamcontent.com (cache9-iad1.steamcontent.com)
+[2026-08-09 22:03:23] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:03:23] AppID 2430930 App update changed : Running Update,Verifying Staged,
+[2026-08-09 22:03:26] Verified 2048 MB in 'G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD', clean bytes tally is now 2048 MB
+[2026-08-09 22:03:26] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:03:26] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:03:26] AppID 2430930 App update changed : Running Update,Committing,
+[2026-08-09 22:03:26] AppID 2430930 starting commit from "g:\new folder\steamapps\downloading\2430930" to "g:\new folder" : 248 updated, 0 moved, 0 deleted files
+[2026-08-09 22:03:26] AppID 2430930 state changed : Fully Installed,Update Queued,Update Running,
+[2026-08-09 22:03:26] AppID 2430930 finished update, 2 mounted depots (BuildID 24605990) : 1004 (5612541580377302256),2430931 (3176100767327618003),
+[2026-08-09 22:03:26] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:03:26] AppID 2430930 App update changed : None
+[2026-08-09 22:03:26] AppID 2430930 state changed : Fully Installed,Update Queued,
+[2026-08-09 22:03:26] AppID 2430930 state changed : Fully Installed,
+[2026-08-09 22:03:26] AppID 2430930 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-08-09 22:03:28] HTTPS (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:03:28] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:03:28] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:03:28] HTTPS (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:03:28] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:03:28] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:03:28] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:03:28] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:03:28] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:03:28] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Closing connection
+
+
+[2026-08-09 22:05:44] Client version: 1785799152
+[2026-08-09 22:05:44] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 22:05:44] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 22:05:44] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:05:45] Loaded 0 apps from install folder "g:\test\steamapps\appmanifest_*.acf".
+[2026-08-09 22:05:45] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:05:45] AppID 2430930 state changed : Update Required,
+[2026-08-09 22:05:45] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:05:45] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 22:05:45] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:05:45] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 22:05:45] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:05:45] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 22:05:45] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:05:45] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 22:05:45] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:05:45] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 22:05:45] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 22:05:45] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:05:45] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 22:05:45] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 22:05:45] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 22:05:45] Got 30 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 22:05:45] Moving to source priority class '3'
+[2026-08-09 22:05:45] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 22:05:45] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 22:05:45] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 22:05:45] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 22:05:45] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 22:05:45] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 22:05:45] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 22:05:45] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 22:05:45] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 22:05:45] HTTP/2 available
+[2026-08-09 22:05:45] Created ipv4-only http client
+[2026-08-09 22:05:46] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:05:46] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:05:46] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:05:46] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:05:46] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:05:46] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:05:46] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:05:46] HTTPS (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:05:47] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 22:05:58] Increasing target number of download connections to 9 (rate was 0.000, now 1285.016)
+[2026-08-09 22:05:58] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 22:05:59] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:06:14] Increasing target number of download connections to 10 (rate was 1285.016, now 1552.463)
+[2026-08-09 22:06:14] Created download interface of type 'SteamCache' (7) to host cache9-iad1.steamcontent.com (cache9-iad1.steamcontent.com)
+[2026-08-09 22:06:17] HTTPS (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:06:34] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:06:34] AppID 2430930 App update changed : Running Update,Verifying Staged,
+[2026-08-09 22:06:38] Verified 2048 MB in 'G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD', clean bytes tally is now 2048 MB
+[2026-08-09 22:06:38] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:06:38] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:06:38] AppID 2430930 App update changed : Running Update,Committing,
+[2026-08-09 22:06:38] AppID 2430930 starting commit from "g:\test\steamapps\downloading\2430930" to "g:\test" : 248 updated, 0 moved, 0 deleted files
+[2026-08-09 22:06:38] AppID 2430930 state changed : Fully Installed,Update Queued,Update Running,
+[2026-08-09 22:06:38] AppID 2430930 finished update, 2 mounted depots (BuildID 24605990) : 1004 (5612541580377302256),2430931 (3176100767327618003),
+[2026-08-09 22:06:38] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:06:38] AppID 2430930 App update changed : None
+[2026-08-09 22:06:38] AppID 2430930 state changed : Fully Installed,Update Queued,
+[2026-08-09 22:06:38] AppID 2430930 state changed : Fully Installed,
+[2026-08-09 22:06:38] AppID 2430930 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:06:39] HTTP/2 (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Closing connection
+
+
+[2026-08-09 22:07:38] Client version: 1785799152
+[2026-08-09 22:07:38] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 22:07:38] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 22:07:38] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:07:39] Loaded 0 apps from install folder "g:\test\steamapps\appmanifest_*.acf".
+[2026-08-09 22:07:39] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:07:39] AppID 2430930 state changed : Update Required,
+[2026-08-09 22:07:39] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:07:39] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 22:07:39] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:07:39] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 22:07:39] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:07:39] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 22:07:39] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:07:39] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 22:07:39] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:07:39] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 22:07:39] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 22:07:39] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:07:39] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 22:07:39] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 22:07:39] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 22:07:39] Got 32 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 22:07:39] Moving to source priority class '3'
+[2026-08-09 22:07:39] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 22:07:39] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 22:07:39] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 22:07:39] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 22:07:39] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 22:07:39] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 22:07:39] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 22:07:39] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 22:07:39] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 22:07:40] HTTP/2 available
+[2026-08-09 22:07:40] Created ipv4-only http client
+[2026-08-09 22:07:40] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:07:40] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:07:40] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:07:40] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:07:40] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:07:40] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:07:40] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:07:40] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:07:41] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 22:07:52] Increasing target number of download connections to 9 (rate was 0.000, now 1221.718)
+[2026-08-09 22:07:52] Created download interface of type 'SteamCache' (7) to host cache9-iad1.steamcontent.com (cache9-iad1.steamcontent.com)
+[2026-08-09 22:07:53] HTTPS (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Negotiated HTTP/2
+
+
+[2026-08-09 22:08:43] Client version: 1785799152
+[2026-08-09 22:08:43] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 22:08:43] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 22:08:43] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:08:44] Loaded 1 apps from install folder "g:\test\steamapps\appmanifest_*.acf".
+[2026-08-09 22:08:44] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:08:44] AppID 2430930 scheduler update : Priority First, not played for 65 seconds, update disabled for 0 seconds
+[2026-08-09 22:08:44] AppID 2430930 state changed : Update Required,Update Queued,Update Started,
+[2026-08-09 22:08:44] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 22:08:44] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:08:44] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 22:08:44] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:08:44] Incomplete loading g:\test\steamapps\downloading\state_2430930_1004.patch: missing sentinel
+[2026-08-09 22:08:44] Incomplete loading g:\test\steamapps\downloading\state_2430930_2430931.patch: missing sentinel
+[2026-08-09 22:08:44] AppID 2430930 update started : download 2899968272/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 4125247107/12836053849 
+[2026-08-09 22:08:44] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 22:08:44] AppID 2430930 App update changed : Running Update,Staging,
+[2026-08-09 22:08:44] Got 32 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 22:08:44] Moving to source priority class '3'
+[2026-08-09 22:08:44] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 22:08:44] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 22:08:44] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 22:08:44] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 22:08:44] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 22:08:44] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 22:08:44] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 22:08:44] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 22:08:44] Downloading 7245 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 22:08:44] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 22:08:44] HTTP/2 available
+[2026-08-09 22:08:44] Created ipv4-only http client
+[2026-08-09 22:08:45] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:08:45] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:08:45] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:08:45] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:08:45] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:08:45] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:08:45] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:08:45] HTTPS (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:08:57] Increasing target number of download connections to 9 (rate was 0.000, now 1411.105)
+[2026-08-09 22:08:57] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 22:08:58] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:09:17] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:09:17] AppID 2430930 App update changed : Running Update,Verifying Staged,
+[2026-08-09 22:09:38] Verified 12241 MB in 'G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD', clean bytes tally is now 12241 MB
+[2026-08-09 22:09:38] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:09:38] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:09:38] AppID 2430930 App update changed : Running Update,Committing,
+[2026-08-09 22:09:38] AppID 2430930 starting commit from "g:\test\steamapps\downloading\2430930" to "g:\test" : 248 updated, 0 moved, 0 deleted files
+[2026-08-09 22:09:38] AppID 2430930 state changed : Fully Installed,Update Queued,Update Running,
+[2026-08-09 22:09:38] AppID 2430930 finished update, 2 mounted depots (BuildID 24605990) : 1004 (5612541580377302256),2430931 (3176100767327618003),
+[2026-08-09 22:09:38] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:09:38] AppID 2430930 App update changed : None
+[2026-08-09 22:09:38] AppID 2430930 state changed : Fully Installed,Update Queued,
+[2026-08-09 22:09:38] AppID 2430930 state changed : Fully Installed,
+[2026-08-09 22:09:38] AppID 2430930 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-08-09 22:09:38] HTTP/2 (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:09:38] HTTP/2 (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:09:38] HTTP/2 (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:09:38] HTTP/2 (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:09:38] HTTP/2 (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:09:38] HTTP/2 (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:09:38] HTTP/2 (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:09:38] HTTP/2 (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:09:38] HTTP/2 (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Closing connection
+
+
+[2026-08-09 22:13:54] Client version: 1785799152
+[2026-08-09 22:13:54] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 22:13:54] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 22:13:54] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:13:54] Loaded 0 apps from install folder "g:\test\steamapps\appmanifest_*.acf".
+[2026-08-09 22:13:54] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:13:55] AppID 2430930 state changed : Update Required,
+[2026-08-09 22:13:55] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:13:55] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 22:13:55] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:13:55] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 22:13:55] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:13:55] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 22:13:55] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:13:55] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 22:13:55] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:13:55] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 22:13:55] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 22:13:55] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:13:55] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 22:13:55] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 22:13:55] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 22:13:55] Got 30 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 22:13:55] Moving to source priority class '3'
+[2026-08-09 22:13:55] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 22:13:55] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 22:13:55] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 22:13:55] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 22:13:55] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 22:13:55] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 22:13:55] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 22:13:55] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 22:13:55] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 22:13:55] HTTP/2 available
+[2026-08-09 22:13:55] Created ipv4-only http client
+[2026-08-09 22:13:55] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:13:56] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:13:56] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:13:56] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:13:56] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:13:56] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:13:56] HTTPS (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:13:56] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:13:56] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 22:14:08] Increasing target number of download connections to 9 (rate was 0.000, now 1164.111)
+[2026-08-09 22:14:08] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 22:14:08] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:14:22] Increasing target number of download connections to 10 (rate was 1164.111, now 1435.265)
+[2026-08-09 22:14:22] Created download interface of type 'SteamCache' (7) to host cache9-iad1.steamcontent.com (cache9-iad1.steamcontent.com)
+[2026-08-09 22:14:22] HTTPS (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:14:46] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:14:46] AppID 2430930 App update changed : Running Update,Verifying Staged,
+[2026-08-09 22:14:49] Verified 2048 MB in 'G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD', clean bytes tally is now 2048 MB
+[2026-08-09 22:14:49] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:14:49] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:14:49] AppID 2430930 App update changed : Running Update,Committing,
+[2026-08-09 22:14:49] AppID 2430930 starting commit from "g:\test\steamapps\downloading\2430930" to "g:\test" : 248 updated, 0 moved, 0 deleted files
+[2026-08-09 22:14:50] AppID 2430930 state changed : Fully Installed,Update Queued,Update Running,
+[2026-08-09 22:14:50] AppID 2430930 finished update, 2 mounted depots (BuildID 24605990) : 1004 (5612541580377302256),2430931 (3176100767327618003),
+[2026-08-09 22:14:50] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:14:50] AppID 2430930 App update changed : None
+[2026-08-09 22:14:50] AppID 2430930 state changed : Fully Installed,Update Queued,
+[2026-08-09 22:14:50] AppID 2430930 state changed : Fully Installed,
+[2026-08-09 22:14:50] AppID 2430930 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:14:51] HTTP/2 (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Closing connection
+
+
+[2026-08-09 22:16:28] Client version: 1785799152
+[2026-08-09 22:16:28] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 22:16:28] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 22:16:28] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:16:29] Loaded 0 apps from install folder "g:\test\steamapps\appmanifest_*.acf".
+[2026-08-09 22:16:29] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:16:29] AppID 2430930 state changed : Update Required,
+[2026-08-09 22:16:29] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 22:16:29] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 22:16:29] AppID 2430930 scheduler update : Priority First, not played for 4294967295 seconds, update disabled for 0 seconds
+[2026-08-09 22:16:29] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 22:16:29] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:16:29] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 22:16:29] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:16:29] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 22:16:29] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:16:29] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 22:16:29] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 22:16:29] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:16:29] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 22:16:29] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 22:16:29] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 22:16:29] Got 31 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 22:16:29] Moving to source priority class '3'
+[2026-08-09 22:16:29] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 22:16:29] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 22:16:29] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 22:16:29] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 22:16:29] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 22:16:29] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 22:16:29] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 22:16:29] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 22:16:29] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 22:16:30] HTTP/2 available
+[2026-08-09 22:16:30] Created ipv4-only http client
+[2026-08-09 22:16:31] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+
+
+[2026-08-09 22:29:46] Client version: 1785799152
+[2026-08-09 22:29:46] Loaded Steam library folders configuration: G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\libraryfolders.vdf
+[2026-08-09 22:29:46] Loaded 0 apps from install folder "G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD\steamapps\appmanifest_*.acf".
+[2026-08-09 22:29:46] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:29:46] Loaded 0 apps from install folder "g:\test\steamapps\appmanifest_*.acf".
+[2026-08-09 22:29:46] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:29:47] AppID 2430930 state changed : Update Required,
+[2026-08-09 22:29:47] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:29:47] AppID 2430930 state changed : Update Required,Update Queued,
+[2026-08-09 22:29:47] AppID 2430930 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-09 22:29:47] AppID 2430930 state changed : Update Required,Update Queued,Update Running,
+[2026-08-09 22:29:47] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:29:47] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-08-09 22:29:47] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:29:47] AppID 2430930 App update changed : Running Update,Verifying Installed,
+[2026-08-09 22:29:47] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:29:47] AppID 2430930 App update changed : Running Update,Preallocating,
+[2026-08-09 22:29:47] AppID 2430930 preallocated 87 files (12238 MB) 
+[2026-08-09 22:29:47] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:29:47] AppID 2430930 update started : download 0/9257018864, store 0/0, reuse 0/0, delta 0/0, stage 0/12836053849 
+[2026-08-09 22:29:47] AppID 2430930 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-09 22:29:47] AppID 2430930 App update changed : Running Update,Downloading,Staging,
+[2026-08-09 22:29:47] Got 32 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2026-08-09 22:29:47] Moving to source priority class '3'
+[2026-08-09 22:29:47] Created download interface of type 'SteamCache' (7) to host cache10-iad1.steamcontent.com (cache10-iad1.steamcontent.com)
+[2026-08-09 22:29:47] Created download interface of type 'SteamCache' (7) to host cache12-iad1.steamcontent.com (cache12-iad1.steamcontent.com)
+[2026-08-09 22:29:47] Created download interface of type 'SteamCache' (7) to host cache2-iad1.steamcontent.com (cache2-iad1.steamcontent.com)
+[2026-08-09 22:29:47] Created download interface of type 'SteamCache' (7) to host cache20-iad1.steamcontent.com (cache20-iad1.steamcontent.com)
+[2026-08-09 22:29:47] Created download interface of type 'SteamCache' (7) to host cache18-iad1.steamcontent.com (cache18-iad1.steamcontent.com)
+[2026-08-09 22:29:47] Created download interface of type 'SteamCache' (7) to host cache1-iad1.steamcontent.com (cache1-iad1.steamcontent.com)
+[2026-08-09 22:29:47] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2026-08-09 22:29:47] Created download interface of type 'SteamCache' (7) to host cache21-iad1.steamcontent.com (cache21-iad1.steamcontent.com)
+[2026-08-09 22:29:47] Downloading 66 chunks for depot 1004 (5612541580377302256)
+[2026-08-09 22:29:47] HTTP/2 available
+[2026-08-09 22:29:47] Created ipv4-only http client
+[2026-08-09 22:29:47] HTTPS (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:29:48] HTTPS (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:29:48] HTTPS (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:29:48] HTTPS (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:29:48] HTTPS (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:29:48] HTTPS (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:29:48] HTTPS (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:29:48] HTTPS (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:29:48] Downloading 11076 chunks for depot 2430931 (3176100767327618003)
+[2026-08-09 22:30:00] Increasing target number of download connections to 9 (rate was 0.000, now 1255.877)
+[2026-08-09 22:30:00] Created download interface of type 'SteamCache' (7) to host cache22-iad1.steamcontent.com (cache22-iad1.steamcontent.com)
+[2026-08-09 22:30:01] HTTPS (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:30:14] Increasing target number of download connections to 10 (rate was 1255.877, now 1513.037)
+[2026-08-09 22:30:14] Created download interface of type 'SteamCache' (7) to host cache9-iad1.steamcontent.com (cache9-iad1.steamcontent.com)
+[2026-08-09 22:30:16] HTTPS (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Negotiated HTTP/2
+[2026-08-09 22:30:36] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:30:36] AppID 2430930 App update changed : Running Update,Verifying Staged,
+[2026-08-09 22:30:38] Verified 2048 MB in 'G:\ASA-Manager\ASAServerManager\bin\Debug\net5.0-windows\SteamCMD', clean bytes tally is now 2048 MB
+[2026-08-09 22:30:38] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-09 22:30:38] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:30:38] AppID 2430930 App update changed : Running Update,Committing,
+[2026-08-09 22:30:38] AppID 2430930 starting commit from "g:\test\steamapps\downloading\2430930" to "g:\test" : 248 updated, 0 moved, 0 deleted files
+[2026-08-09 22:30:38] AppID 2430930 state changed : Fully Installed,Update Queued,Update Running,
+[2026-08-09 22:30:38] AppID 2430930 finished update, 2 mounted depots (BuildID 24605990) : 1004 (5612541580377302256),2430931 (3176100767327618003),
+[2026-08-09 22:30:38] AppID 2430930 App update changed : Running Update,
+[2026-08-09 22:30:38] AppID 2430930 App update changed : None
+[2026-08-09 22:30:38] AppID 2430930 state changed : Fully Installed,Update Queued,
+[2026-08-09 22:30:38] AppID 2430930 state changed : Fully Installed,
+[2026-08-09 22:30:38] AppID 2430930 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,224) - cache9-iad1.steamcontent.com (162.254.192.7:443 / 162.254.192.7:443, host: cache9-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,568) - cache22-iad1.steamcontent.com (162.254.192.45:443 / 162.254.192.45:443, host: cache22-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,567) - cache21-iad1.steamcontent.com (162.254.192.44:443 / 162.254.192.44:443, host: cache21-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,35) - cache5-iad1.steamcontent.com (162.254.192.5:443 / 162.254.192.5:443, host: cache5-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,31) - cache1-iad1.steamcontent.com (162.254.192.3:443 / 162.254.192.3:443, host: cache1-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,469) - cache18-iad1.steamcontent.com (162.254.192.41:443 / 162.254.192.41:443, host: cache18-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,503) - cache20-iad1.steamcontent.com (162.254.192.43:443 / 162.254.192.43:443, host: cache20-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,32) - cache2-iad1.steamcontent.com (162.254.192.21:443 / 162.254.192.21:443, host: cache2-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,174) - cache12-iad1.steamcontent.com (162.254.192.47:443 / 162.254.192.47:443, host: cache12-iad1.steamcontent.com): Closing connection
+[2026-08-09 22:30:39] HTTP/2 (SteamCache,223) - cache10-iad1.steamcontent.com (162.254.192.25:443 / 162.254.192.25:443, host: cache10-iad1.steamcontent.com): Closing connection

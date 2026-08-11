@@ -1,0 +1,30 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# Build artifacts
+*.dll
+*.pdb
+
+# Local configuration
+Config/
+*.config.local
+
+# SteamCMD
+SteamCMD/
+
+# Archives
+*.rar
+*.zip
+
+# OS files
+Thumbs.db
+.DS_Store

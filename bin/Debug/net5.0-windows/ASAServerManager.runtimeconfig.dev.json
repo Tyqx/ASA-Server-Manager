@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\Twix\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Twix\\.nuget\\packages"
-    ]
-  }
-}

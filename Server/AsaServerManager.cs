@@ -45,27 +45,28 @@ namespace ASAServerManager.Server
             }
 
             ProcessStartInfo startInfo =
-                new ProcessStartInfo
-                {
-                    FileName = executable,
-                    Arguments = arguments,
-                    WorkingDirectory =
-                        Path.GetDirectoryName(executable)
-                        ?? serverDirectory,
+    new ProcessStartInfo
+    {
+        FileName = executable,
+        Arguments = arguments,
+        WorkingDirectory =
+            Path.GetDirectoryName(executable)
+            ?? serverDirectory,
 
-                    UseShellExecute = false,
+        UseShellExecute = false,
 
-                    RedirectStandardOutput = true,
-                    RedirectStandardError = true,
+        RedirectStandardInput = true,
+        RedirectStandardOutput = true,
+        RedirectStandardError = true,
 
-                    CreateNoWindow = true,
+        CreateNoWindow = true,
 
-                    StandardOutputEncoding =
-                        System.Text.Encoding.UTF8,
+        StandardOutputEncoding =
+            System.Text.Encoding.UTF8,
 
-                    StandardErrorEncoding =
-                        System.Text.Encoding.UTF8
-                };
+        StandardErrorEncoding =
+            System.Text.Encoding.UTF8
+    };
 
             _serverProcess =
                 new Process
@@ -100,6 +101,24 @@ namespace ASAServerManager.Server
             return true;
         }
 
+        public async Task<bool> SendCommandAsync(string command)
+{
+    if (!IsRunning || _serverProcess == null)
+        return false;
+
+    try
+    {
+        await _serverProcess.StandardInput.WriteLineAsync(command);
+        await _serverProcess.StandardInput.FlushAsync();
+
+        return true;
+    }
+    catch
+    {
+        return false;
+    }
+}
+
         public async Task StopAsync()
         {
             if (!IsRunning)
@@ -126,6 +145,7 @@ namespace ASAServerManager.Server
                 }
             });
         }
+
 
         public async Task RestartAsync(
             string serverDirectory,

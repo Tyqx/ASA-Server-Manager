@@ -1,923 +1,536 @@
-<UserControl x:Class="ASAServerManager.Pages.ServerPage"
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-          mc:Ignorable="d"
-          Background="#101217">
-
-<UserControl.Resources>
-
-    <!-- ===================================================== -->
-    <!-- PRIMARY BUTTON -->
-    <!-- ===================================================== -->
-
-    <Style x:Key="PrimaryButton"
-           TargetType="Button">
-
-        <Setter Property="Background" Value="#2D7DFF"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Padding" Value="18,10"/>
-        <Setter Property="Margin" Value="5"/>
-        <Setter Property="Cursor" Value="Hand"/>
-        <Setter Property="FontWeight" Value="SemiBold"/>
-
-        <Setter Property="HorizontalContentAlignment"
-                Value="Center"/>
-
-        <Setter Property="VerticalContentAlignment"
-                Value="Center"/>
-
-        <Setter Property="Template">
-
-            <Setter.Value>
-
-                <ControlTemplate TargetType="Button">
-
-                    <Border
-                        Background="{TemplateBinding Background}"
-                        CornerRadius="5"
-                        Padding="{TemplateBinding Padding}">
-
-                        <ContentPresenter
-                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-
-                    </Border>
-
-                </ControlTemplate>
-
-            </Setter.Value>
-
-        </Setter>
-
-        <Style.Triggers>
-
-            <Trigger Property="IsMouseOver"
-                     Value="True">
-
-                <Setter Property="Background"
-                        Value="#4A91FF"/>
-
-            </Trigger>
-
-            <Trigger Property="IsPressed"
-                     Value="True">
-
-                <Setter Property="Background"
-                        Value="#1F64D6"/>
-
-            </Trigger>
-
-            <Trigger Property="IsEnabled"
-                     Value="False">
-
-                <Setter Property="Opacity"
-                        Value="0.45"/>
-
-            </Trigger>
-
-        </Style.Triggers>
-
-    </Style>
-
-
-    <!-- ===================================================== -->
-    <!-- SECONDARY BUTTON -->
-    <!-- ===================================================== -->
-
-    <Style x:Key="SecondaryButton"
-           TargetType="Button">
-
-        <Setter Property="Background" Value="#252932"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Padding" Value="18,10"/>
-        <Setter Property="Margin" Value="5"/>
-        <Setter Property="Cursor" Value="Hand"/>
-        <Setter Property="FontWeight" Value="SemiBold"/>
-
-        <Setter Property="HorizontalContentAlignment"
-                Value="Center"/>
-
-        <Setter Property="VerticalContentAlignment"
-                Value="Center"/>
-
-        <Setter Property="Template">
-
-            <Setter.Value>
-
-                <ControlTemplate TargetType="Button">
-
-                    <Border
-                        Background="{TemplateBinding Background}"
-                        CornerRadius="5"
-                        Padding="{TemplateBinding Padding}">
-
-                        <ContentPresenter
-                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-
-                    </Border>
-
-                </ControlTemplate>
-
-            </Setter.Value>
-
-        </Setter>
-
-        <Style.Triggers>
-
-            <Trigger Property="IsMouseOver"
-                     Value="True">
-
-                <Setter Property="Background"
-                        Value="#343944"/>
-
-            </Trigger>
-
-            <Trigger Property="IsPressed"
-                     Value="True">
-
-                <Setter Property="Background"
-                        Value="#414754"/>
-
-            </Trigger>
-
-            <Trigger Property="IsEnabled"
-                     Value="False">
-
-                <Setter Property="Opacity"
-                        Value="0.45"/>
-
-            </Trigger>
-
-        </Style.Triggers>
-
-    </Style>
-
-
-    <!-- ===================================================== -->
-    <!-- DARK TEXTBOX -->
-    <!-- ===================================================== -->
-
-    <Style x:Key="DarkTextBox"
-           TargetType="TextBox">
-
-        <Setter Property="Background"
-                Value="#252932"/>
-
-        <Setter Property="Foreground"
-                Value="White"/>
-
-        <Setter Property="BorderBrush"
-                Value="#3A3F4B"/>
-
-        <Setter Property="BorderThickness"
-                Value="1"/>
-
-        <Setter Property="Padding"
-                Value="10,8"/>
-
-        <Setter Property="CaretBrush"
-                Value="White"/>
-
-    </Style>
-
-
-    <!-- ===================================================== -->
-    <!-- DARK PASSWORD BOX -->
-    <!-- ===================================================== -->
-
-    <Style x:Key="DarkPasswordBox"
-           TargetType="PasswordBox">
-
-        <Setter Property="Background"
-                Value="#252932"/>
-
-        <Setter Property="Foreground"
-                Value="White"/>
-
-        <Setter Property="BorderBrush"
-                Value="#3A3F4B"/>
-
-        <Setter Property="BorderThickness"
-                Value="1"/>
-
-        <Setter Property="Padding"
-                Value="10,8"/>
-
-    </Style>
-
-
-    <!-- ===================================================== -->
-    <!-- DARK COMBOBOX -->
-    <!-- ===================================================== -->
-
-    <Style x:Key="DarkComboBox"
-           TargetType="ComboBox">
-
-        <Setter Property="Background"
-                Value="#252932"/>
-
-        <Setter Property="Foreground"
-                Value="White"/>
-
-        <Setter Property="BorderBrush"
-                Value="#3A3F4B"/>
-
-        <Setter Property="BorderThickness"
-                Value="1"/>
-
-        <Setter Property="Padding"
-                Value="8,6"/>
-
-        <Setter Property="FontSize"
-                Value="14"/>
-
-        <Setter Property="HorizontalContentAlignment"
-                Value="Left"/>
-
-        <Setter Property="Template">
-
-            <Setter.Value>
-
-                <ControlTemplate TargetType="ComboBox">
-
-                    <Grid>
+<UserControl
+    x:Class="ASAServerManager.Pages.ServerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+
+        <!-- ===================================================== -->
+        <!-- BUTTON STYLES -->
+        <!-- ===================================================== -->
+
+        <Style x:Key="PrimaryButton"
+               TargetType="Button">
+
+            <Setter Property="Background" Value="#2D7DFF"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="18,10"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
 
                         <Border
-                            Background="#252932"
-                            BorderBrush="#3A3F4B"
-                            BorderThickness="1"
-                            CornerRadius="5">
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="5"
+                            Padding="{TemplateBinding Padding}">
 
-                            <Grid>
-
-                                <ContentPresenter
-                                    Margin="10,0,35,0"
-                                    VerticalAlignment="Center"
-                                    HorizontalAlignment="Left"
-                                    Content="{TemplateBinding SelectionBoxItem}"
-                                    ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
-                                    ContentStringFormat="{TemplateBinding SelectionBoxItemStringFormat}"/>
-
-                                <Path
-                                    Data="M 0 0 L 5 5 L 10 0"
-                                    Stroke="#9AA1AF"
-                                    StrokeThickness="2"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Center"
-                                    Margin="0,0,12,0"/>
-
-                            </Grid>
+                            <ContentPresenter
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
 
                         </Border>
 
+                    </ControlTemplate>
 
-                        <ToggleButton
-                            Background="Transparent"
-                            BorderThickness="0"
-                            IsChecked="{Binding IsDropDownOpen,
-                                RelativeSource={RelativeSource TemplatedParent},
-                                Mode=TwoWay}">
+                </Setter.Value>
 
-                            <ToggleButton.Template>
+            </Setter>
 
-                                <ControlTemplate TargetType="ToggleButton">
+            <Style.Triggers>
 
-                                    <Border Background="Transparent"/>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#4A91FF"/>
+                </Trigger>
 
-                                </ControlTemplate>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Opacity" Value="0.45"/>
+                </Trigger>
 
-                            </ToggleButton.Template>
+            </Style.Triggers>
 
-                        </ToggleButton>
+        </Style>
 
 
-                        <Popup
-                            IsOpen="{TemplateBinding IsDropDownOpen}"
-                            Placement="Bottom"
-                            AllowsTransparency="True"
-                            Focusable="False"
-                            PopupAnimation="Slide">
+        <Style x:Key="SecondaryButton"
+               TargetType="Button">
+
+            <Setter Property="Background" Value="#252932"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="18,10"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="5"
+                            Padding="{TemplateBinding Padding}">
+
+                            <ContentPresenter
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+
+                        </Border>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+            <Style.Triggers>
+
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#343944"/>
+                </Trigger>
+
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Opacity" Value="0.45"/>
+                </Trigger>
+
+            </Style.Triggers>
+
+        </Style>
+
+
+        <!-- ===================================================== -->
+        <!-- DARK TEXTBOX -->
+        <!-- ===================================================== -->
+
+        <Style x:Key="DarkTextBox"
+               TargetType="TextBox">
+
+            <Setter Property="Background" Value="#252932"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#3A3F4B"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+        </Style>
+
+
+        <!-- ===================================================== -->
+        <!-- DARK PASSWORD BOX -->
+        <!-- ===================================================== -->
+
+        <Style x:Key="DarkPasswordBox"
+               TargetType="PasswordBox">
+
+            <Setter Property="Background" Value="#252932"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#3A3F4B"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+        </Style>
+
+
+        <!-- ===================================================== -->
+        <!-- DARK COMBOBOX -->
+        <!-- ===================================================== -->
+
+        <Style x:Key="DarkComboBox"
+               TargetType="ComboBox">
+
+            <Setter Property="Background" Value="#252932"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#3A3F4B"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8,6"/>
+            <Setter Property="FontSize" Value="14"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="ComboBox">
+
+                        <Grid>
 
                             <Border
                                 Background="#252932"
                                 BorderBrush="#3A3F4B"
                                 BorderThickness="1"
-                                CornerRadius="5"
-                                MinWidth="{Binding ActualWidth,
-                                    RelativeSource={RelativeSource TemplatedParent}}">
+                                CornerRadius="5">
 
-                                <ScrollViewer
-                                    MaxHeight="300"
-                                    VerticalScrollBarVisibility="Auto">
+                                <Grid>
 
-                                    <ItemsPresenter/>
+                                    <ContentPresenter
+                                        Margin="10,0,35,0"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Left"
+                                        Content="{TemplateBinding SelectionBoxItem}"
+                                        ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                        ContentStringFormat="{TemplateBinding SelectionBoxItemStringFormat}"/>
 
-                                </ScrollViewer>
+                                    <Path
+                                        Data="M 0 0 L 5 5 L 10 0"
+                                        Stroke="#9AA1AF"
+                                        StrokeThickness="2"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Center"
+                                        Margin="0,0,12,0"/>
+
+                                </Grid>
 
                             </Border>
 
-                        </Popup>
 
-                    </Grid>
+                            <ToggleButton
+                                Background="Transparent"
+                                BorderThickness="0"
+                                IsChecked="{Binding IsDropDownOpen,
+                                    RelativeSource={RelativeSource TemplatedParent},
+                                    Mode=TwoWay}">
 
-                </ControlTemplate>
+                                <ToggleButton.Template>
 
-            </Setter.Value>
+                                    <ControlTemplate TargetType="ToggleButton">
 
-        </Setter>
+                                        <Border Background="Transparent"/>
 
-    </Style>
+                                    </ControlTemplate>
 
+                                </ToggleButton.Template>
 
-    <!-- ===================================================== -->
-    <!-- DARK COMBOBOX ITEM -->
-    <!-- ===================================================== -->
+                            </ToggleButton>
 
-    <Style x:Key="DarkComboBoxItem"
-           TargetType="ComboBoxItem">
 
-        <Setter Property="Background"
-                Value="#252932"/>
+                            <Popup
+                                IsOpen="{TemplateBinding IsDropDownOpen}"
+                                Placement="Bottom"
+                                AllowsTransparency="True"
+                                Focusable="False"
+                                PopupAnimation="Slide">
 
-        <Setter Property="Foreground"
-                Value="White"/>
+                                <Border
+                                    Background="#252932"
+                                    BorderBrush="#3A3F4B"
+                                    BorderThickness="1"
+                                    CornerRadius="5"
+                                    MinWidth="{Binding ActualWidth,
+                                        RelativeSource={RelativeSource TemplatedParent}}">
 
-        <Setter Property="Padding"
-                Value="10,8"/>
+                                    <ScrollViewer
+                                        MaxHeight="300"
+                                        VerticalScrollBarVisibility="Auto">
 
-        <Setter Property="HorizontalContentAlignment"
-                Value="Left"/>
+                                        <ItemsPresenter/>
 
-        <Setter Property="Template">
+                                    </ScrollViewer>
 
-            <Setter.Value>
+                                </Border>
 
-                <ControlTemplate TargetType="ComboBoxItem">
-
-                    <Border
-                        x:Name="ItemBorder"
-                        Background="{TemplateBinding Background}"
-                        Padding="{TemplateBinding Padding}">
-
-                        <ContentPresenter
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
-
-                    </Border>
-
-
-                    <ControlTemplate.Triggers>
-
-                        <Trigger Property="IsMouseOver"
-                                 Value="True">
-
-                            <Setter
-                                TargetName="ItemBorder"
-                                Property="Background"
-                                Value="#2D7DFF"/>
-
-                            <Setter
-                                Property="Foreground"
-                                Value="White"/>
-
-                        </Trigger>
-
-
-                        <Trigger Property="IsSelected"
-                                 Value="True">
-
-                            <Setter
-                                TargetName="ItemBorder"
-                                Property="Background"
-                                Value="#2D7DFF"/>
-
-                            <Setter
-                                Property="Foreground"
-                                Value="White"/>
-
-                        </Trigger>
-
-                    </ControlTemplate.Triggers>
-
-                </ControlTemplate>
-
-            </Setter.Value>
-
-        </Setter>
-
-    </Style>
-
-
-    <!-- ===================================================== -->
-    <!-- CHECKBOX -->
-    <!-- ===================================================== -->
-
-    <Style TargetType="CheckBox">
-
-        <Setter Property="Foreground"
-                Value="White"/>
-
-        <Setter Property="Margin"
-                Value="0,4"/>
-
-    </Style>
-
-</UserControl.Resources>
-
-
-<!-- ========================================================= -->
-<!-- MAIN SCROLL VIEW -->
-<!-- ========================================================= -->
-
-<ScrollViewer
-    VerticalScrollBarVisibility="Auto"
-    HorizontalScrollBarVisibility="Disabled">
-
-    <Grid Margin="30">
-
-        <Grid.RowDefinitions>
-
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-
-        </Grid.RowDefinitions>
-
-
-        <!-- ================================================= -->
-        <!-- HEADER -->
-        <!-- ================================================= -->
-
-        <Grid
-            Grid.Row="0"
-            Margin="0,0,0,25">
-
-            <Grid.ColumnDefinitions>
-
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-
-            </Grid.ColumnDefinitions>
-
-
-            <StackPanel Grid.Column="0">
-
-                <TextBlock
-                    Text="ASA Server"
-                    Foreground="White"
-                    FontSize="30"
-                    FontWeight="Bold"/>
-
-                <TextBlock
-                    Text="ARK: Survival Ascended Dedicated Server"
-                    Foreground="#7F8796"
-                    FontSize="14"
-                    Margin="0,5,0,0"/>
-
-            </StackPanel>
-
-
-            <StackPanel
-                Grid.Column="1"
-                Orientation="Horizontal"
-                VerticalAlignment="Center">
-
-                <TextBlock
-                    Text="SERVER STATUS"
-                    Foreground="#7F8796"
-                    FontSize="11"
-                    FontWeight="Bold"
-                    VerticalAlignment="Center"
-                    Margin="0,0,10,0"/>
-
-                <TextBlock
-                    x:Name="ServerStatusText"
-                    Text="● NOT CONFIGURED"
-                    Foreground="Gray"
-                    FontWeight="Bold"
-                    VerticalAlignment="Center"/>
-
-            </StackPanel>
-
-        </Grid>
-
-
-        <!-- ================================================= -->
-        <!-- SERVER CONFIGURATION -->
-        <!-- ================================================= -->
-
-        <Border
-            Grid.Row="1"
-            Background="#191C22"
-            CornerRadius="8"
-            Padding="20"
-            Margin="0,0,0,20">
-
-            <Grid>
-
-                <Grid.RowDefinitions>
-
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-
-                </Grid.RowDefinitions>
-
-
-                <!-- TITLE -->
-
-                <TextBlock
-                    Grid.Row="0"
-                    Text="Server Configuration"
-                    Foreground="White"
-                    FontSize="20"
-                    FontWeight="Bold"
-                    Margin="0,0,0,20"/>
-
-
-                <!-- ================================================= -->
-                <!-- SERVER PATH / NAME -->
-                <!-- ================================================= -->
-
-                <Grid
-                    Grid.Row="1"
-                    Margin="0,0,0,12">
-
-                    <Grid.ColumnDefinitions>
-
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-
-                    </Grid.ColumnDefinitions>
-
-
-                    <StackPanel
-                        Grid.Column="0"
-                        Margin="0,0,10,0">
-
-                        <TextBlock
-                            Text="Server Folder"
-                            Foreground="#7F8796"
-                            Margin="0,0,0,6"/>
-
-                        <Grid>
-
-                            <Grid.ColumnDefinitions>
-
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="Auto"/>
-
-                            </Grid.ColumnDefinitions>
-
-
-                            <TextBox
-                                x:Name="ServerPathTextBox"
-                                Grid.Column="0"
-                                Style="{StaticResource DarkTextBox}"
-                                TextChanged="ServerPathTextBox_TextChanged"/>
-
-
-                            <Button
-                                Grid.Column="1"
-                                Content="Browse"
-                                Style="{StaticResource SecondaryButton}"
-                                Click="BrowseServerFolderButton_Click"/>
+                            </Popup>
 
                         </Grid>
 
-                    </StackPanel>
+                    </ControlTemplate>
 
+                </Setter.Value>
 
-                    <StackPanel
-                        Grid.Column="1"
-                        Margin="10,0,0,0">
+            </Setter>
 
-                        <TextBlock
-                            Text="Server Name"
-                            Foreground="#7F8796"
-                            Margin="0,0,0,6"/>
+        </Style>
 
-                        <TextBox
-                            x:Name="ServerNameTextBox"
-                            Style="{StaticResource DarkTextBox}"/>
 
-                    </StackPanel>
+        <!-- ===================================================== -->
+        <!-- DARK COMBOBOX ITEMS -->
+        <!-- ===================================================== -->
 
-                </Grid>
+        <Style x:Key="DarkComboBoxItem"
+               TargetType="ComboBoxItem">
 
+            <Setter Property="Background" Value="#252932"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
 
-                <!-- ================================================= -->
-                <!-- MAP / PORTS -->
-                <!-- ================================================= -->
+            <Setter Property="Template">
 
-                <Grid
-                    Grid.Row="2"
-                    Margin="0,0,0,12">
+                <Setter.Value>
 
-                    <Grid.ColumnDefinitions>
+                    <ControlTemplate TargetType="ComboBoxItem">
 
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                        <Border
+                            x:Name="ItemBorder"
+                            Background="{TemplateBinding Background}"
+                            Padding="{TemplateBinding Padding}">
 
-                    </Grid.ColumnDefinitions>
+                            <ContentPresenter
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
 
+                        </Border>
 
-                    <StackPanel
-                        Grid.Column="0"
-                        Margin="0,0,8,0">
+                        <ControlTemplate.Triggers>
 
-                        <TextBlock
-                            Text="Map"
-                            Foreground="#7F8796"
-                            Margin="0,0,0,6"/>
+                            <Trigger Property="IsMouseOver" Value="True">
 
-                        <ComboBox
-                            x:Name="MapComboBox"
-                            Style="{StaticResource DarkComboBox}"
-                            ItemContainerStyle="{StaticResource DarkComboBoxItem}">
+                                <Setter
+                                    TargetName="ItemBorder"
+                                    Property="Background"
+                                    Value="#2D7DFF"/>
 
-                            <ComboBoxItem
-                                Content="TheIsland_WP"/>
+                                <Setter
+                                    Property="Foreground"
+                                    Value="White"/>
 
-                            <ComboBoxItem
-                                Content="ScorchedEarth_WP"/>
+                            </Trigger>
 
-                            <ComboBoxItem
-                                Content="Aberration_WP"/>
+                            <Trigger Property="IsSelected" Value="True">
 
-                            <ComboBoxItem
-                                Content="TheCenter_WP"/>
+                                <Setter
+                                    TargetName="ItemBorder"
+                                    Property="Background"
+                                    Value="#2D7DFF"/>
 
-                            <ComboBoxItem
-                                Content="Ragnarok_WP"/>
+                                <Setter
+                                    Property="Foreground"
+                                    Value="White"/>
 
-                            <ComboBoxItem
-                                Content="Extinction_WP"/>
+                            </Trigger>
 
-                            <ComboBoxItem
-                                Content="Astraeos_WP"/>
+                        </ControlTemplate.Triggers>
 
-                        </ComboBox>
+                    </ControlTemplate>
 
-                    </StackPanel>
+                </Setter.Value>
 
+            </Setter>
 
-                    <StackPanel
-                        Grid.Column="1"
-                        Margin="8,0">
+        </Style>
 
-                        <TextBlock
-                            Text="Server Port"
-                            Foreground="#7F8796"
-                            Margin="0,0,0,6"/>
 
-                        <TextBox
-                            x:Name="ServerPortTextBox"
-                            Style="{StaticResource DarkTextBox}"
-                            Text="7777"/>
+        <!-- ===================================================== -->
+        <!-- CHECKBOX -->
+        <!-- ===================================================== -->
 
-                    </StackPanel>
+        <Style TargetType="CheckBox">
 
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Margin" Value="0,4"/>
 
-                    <StackPanel
-                        Grid.Column="2"
-                        Margin="8,0">
+        </Style>
 
-                        <TextBlock
-                            Text="Query Port"
-                            Foreground="#7F8796"
-                            Margin="0,0,0,6"/>
+    </UserControl.Resources>
 
-                        <TextBox
-                            x:Name="QueryPortTextBox"
-                            Style="{StaticResource DarkTextBox}"
-                            Text="27015"/>
 
-                    </StackPanel>
+    <!-- ========================================================= -->
+    <!-- MAIN SCROLL VIEW -->
+    <!-- ========================================================= -->
 
+    <ScrollViewer
+        VerticalScrollBarVisibility="Auto"
+        HorizontalScrollBarVisibility="Disabled">
 
-                    <StackPanel
-                        Grid.Column="3"
-                        Margin="8,0,0,0">
+        <Grid Margin="30">
 
-                        <TextBlock
-                            Text="Max Players"
-                            Foreground="#7F8796"
-                            Margin="0,0,0,6"/>
+            <Grid.RowDefinitions>
 
-                        <TextBox
-                            x:Name="MaxPlayersTextBox"
-                            Style="{StaticResource DarkTextBox}"
-                            Text="70"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
 
-                    </StackPanel>
+            </Grid.RowDefinitions>
 
-                </Grid>
 
+            <!-- ================================================= -->
+            <!-- HEADER -->
+            <!-- ================================================= -->
 
-                <!-- ================================================= -->
-                <!-- DIFFICULTY / PASSWORDS -->
-                <!-- ================================================= -->
+            <Grid
+                Grid.Row="0"
+                Margin="0,0,0,25">
 
-                <Grid
-                    Grid.Row="3"
-                    Margin="0,0,0,12">
+                <Grid.ColumnDefinitions>
 
-                    <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
 
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                    </Grid.ColumnDefinitions>
 
+                <StackPanel Grid.Column="0">
 
-                    <StackPanel
-                        Grid.Column="0"
-                        Margin="0,0,8,0">
+                    <TextBlock
+                        Text="ASA Server"
+                        Foreground="White"
+                        FontSize="30"
+                        FontWeight="Bold"/>
 
-                        <TextBlock
-                            Text="Difficulty"
-                            Foreground="#7F8796"
-                            Margin="0,0,0,6"/>
+                    <TextBlock
+                        Text="ARK: Survival Ascended Dedicated Server"
+                        Foreground="#7F8796"
+                        FontSize="14"
+                        Margin="0,5,0,0"/>
 
-                        <ComboBox
-                            x:Name="DifficultyComboBox"
-                            Style="{StaticResource DarkComboBox}"
-                            ItemContainerStyle="{StaticResource DarkComboBoxItem}">
+                </StackPanel>
 
-                            <ComboBoxItem Content="0.5"/>
-                            <ComboBoxItem Content="1.0" IsSelected="True"/>
-                            <ComboBoxItem Content="2.0"/>
-                            <ComboBoxItem Content="3.0"/>
-                            <ComboBoxItem Content="4.0"/>
-                            <ComboBoxItem Content="5.0"/>
 
-                        </ComboBox>
+                <!-- SERVER RUNNING STATUS -->
 
-                    </StackPanel>
+                <StackPanel
+                    Grid.Column="1"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center">
 
+                    <TextBlock
+                        Text="SERVER STATUS"
+                        Foreground="#7F8796"
+                        FontSize="11"
+                        FontWeight="Bold"
+                        VerticalAlignment="Center"
+                        Margin="0,0,10,0"/>
 
-                    <StackPanel
-                        Grid.Column="1"
-                        Margin="8,0">
+                    <TextBlock
+                        x:Name="ServerStatusText"
+                        Text="● OFFLINE"
+                        Foreground="IndianRed"
+                        FontWeight="Bold"
+                        VerticalAlignment="Center"/>
 
-                        <TextBlock
-                            Text="Server Password"
-                            Foreground="#7F8796"
-                            Margin="0,0,0,6"/>
+                </StackPanel>
 
-                        <PasswordBox
-                            x:Name="ServerPasswordBox"
-                            Style="{StaticResource DarkPasswordBox}"/>
+            </Grid>
 
-                    </StackPanel>
 
+            <!-- ================================================= -->
+            <!-- SERVER CONFIGURATION -->
+            <!-- ================================================= -->
 
-                    <StackPanel
-                        Grid.Column="2"
-                        Margin="8,0">
+            <Border
+                Grid.Row="1"
+                Background="#191C22"
+                CornerRadius="8"
+                Padding="20"
+                Margin="0,0,0,20">
 
-                        <TextBlock
-                            Text="Admin Password"
-                            Foreground="#7F8796"
-                            Margin="0,0,0,6"/>
+                <Grid>
 
-                        <PasswordBox
-                            x:Name="AdminPasswordBox"
-                            Style="{StaticResource DarkPasswordBox}"/>
+                    <Grid.RowDefinitions>
 
-                    </StackPanel>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
 
+                    </Grid.RowDefinitions>
 
-                    <StackPanel
-                        Grid.Column="3"
-                        Margin="8,15,0,0">
 
-                        <CheckBox
-                            x:Name="PvECheckBox"
-                            Content="PvE"/>
+                    <TextBlock
+                        Grid.Row="0"
+                        Text="Server Configuration"
+                        Foreground="White"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Margin="0,0,0,20"/>
 
-                        <CheckBox
-                            x:Name="CrossplayCheckBox"
-                            Content="Crossplay"
-                            IsChecked="True"/>
 
-                    </StackPanel>
+                    <!-- SERVER PATH / NAME -->
 
-                </Grid>
-
-
-                <!-- ================================================= -->
-                <!-- CLUSTER -->
-                <!-- ================================================= -->
-
-                <Border
-                    Grid.Row="4"
-                    Background="#14171C"
-                    BorderBrush="#30343D"
-                    BorderThickness="1"
-                    CornerRadius="6"
-                    Padding="15"
-                    Margin="0,0,0,12">
-
-                    <Grid>
+                    <Grid
+                        Grid.Row="1"
+                        Margin="0,0,0,12">
 
                         <Grid.ColumnDefinitions>
 
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="220"/>
+                            <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
 
                         </Grid.ColumnDefinitions>
 
 
-                        <CheckBox
-                            x:Name="ClusterEnabledCheckBox"
-                            Grid.Column="0"
-                            Content="Enable Cluster"
-                            VerticalAlignment="Center"
-                            Margin="0,0,20,0"
-                            Checked="ClusterSettings_Changed"
-                            Unchecked="ClusterSettings_Changed"/>
-
-
                         <StackPanel
-                            Grid.Column="1"
-                            Margin="0,0,15,0">
+                            Grid.Column="0"
+                            Margin="0,0,10,0">
 
                             <TextBlock
-                                Text="Cluster ID"
+                                Text="Server Folder"
                                 Foreground="#7F8796"
-                                FontSize="12"
-                                Margin="0,0,0,5"/>
+                                Margin="0,0,0,6"/>
 
-                            <TextBox
-                                x:Name="ClusterIdTextBox"
-                                Style="{StaticResource DarkTextBox}"
-                                Text="ASACluster"
-                                TextChanged="LaunchOptionsTextBox_TextChanged"/>
+                            <Grid>
+
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+
+                                </Grid.ColumnDefinitions>
+
+
+                                <TextBox
+                                    x:Name="ServerPathTextBox"
+                                    Grid.Column="0"
+                                    Style="{StaticResource DarkTextBox}"
+                                    TextChanged="ServerPathTextBox_TextChanged"/>
+
+                                <Button
+                                    Grid.Column="1"
+                                    Content="Browse"
+                                    Style="{StaticResource SecondaryButton}"
+                                    Click="BrowseServerFolderButton_Click"/>
+
+                            </Grid>
 
                         </StackPanel>
 
 
                         <StackPanel
-                            Grid.Column="2"
-                            Margin="0,0,0,0">
+                            Grid.Column="1"
+                            Margin="10,0,0,0">
 
                             <TextBlock
-                                Text="Cluster Directory"
+                                Text="Server Name"
                                 Foreground="#7F8796"
-                                FontSize="12"
-                                Margin="0,0,0,5"/>
+                                Margin="0,0,0,6"/>
 
                             <TextBox
-                                x:Name="ClusterDirectoryTextBox"
-                                Style="{StaticResource DarkTextBox}"
-                                TextChanged="LaunchOptionsTextBox_TextChanged"/>
+                                x:Name="ServerNameTextBox"
+                                Style="{StaticResource DarkTextBox}"/>
 
                         </StackPanel>
 
                     </Grid>
 
-                </Border>
 
+                    <!-- MAP / PORTS -->
 
-                <!-- ================================================= -->
-                <!-- SERVER INI FILES -->
-                <!-- ================================================= -->
-
-                <Border
-                    Grid.Row="5"
-                    Background="#14171C"
-                    BorderBrush="#30343D"
-                    BorderThickness="1"
-                    CornerRadius="6"
-                    Padding="15"
-                    Margin="0,0,0,12">
-
-                    <Grid>
+                    <Grid
+                        Grid.Row="2"
+                        Margin="0,0,0,12">
 
                         <Grid.ColumnDefinitions>
 
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
 
@@ -929,298 +542,521 @@
                             Margin="0,0,8,0">
 
                             <TextBlock
-                                Text="Game.ini"
-                                Foreground="White"
-                                FontWeight="Bold"
-                                FontSize="14"/>
-
-                            <TextBlock
-                                Text="Edit gameplay, rates, XP, harvesting, breeding and other server settings."
+                                Text="Map"
                                 Foreground="#7F8796"
-                                FontSize="11"
-                                TextWrapping="Wrap"
-                                Margin="0,5,0,8"/>
+                                Margin="0,0,0,6"/>
 
-                            <Button
-                                Content="Edit Game.ini"
-                                Style="{StaticResource SecondaryButton}"
-                                HorizontalAlignment="Left"
-                                Click="EditGameIniButton_Click"/>
+                            <ComboBox
+                                x:Name="MapComboBox"
+                                Style="{StaticResource DarkComboBox}"
+                                ItemContainerStyle="{StaticResource DarkComboBoxItem}">
+
+                                <ComboBoxItem Content="TheIsland_WP"/>
+                                <ComboBoxItem Content="ScorchedEarth_WP"/>
+                                <ComboBoxItem Content="Aberration_WP"/>
+                                <ComboBoxItem Content="TheCenter_WP"/>
+                                <ComboBoxItem Content="Ragnarok_WP"/>
+                                <ComboBoxItem Content="Extinction_WP"/>
+                                <ComboBoxItem Content="Astraeos_WP"/>
+
+                            </ComboBox>
 
                         </StackPanel>
 
 
                         <StackPanel
                             Grid.Column="1"
+                            Margin="8,0">
+
+                            <TextBlock
+                                Text="Server Port"
+                                Foreground="#7F8796"
+                                Margin="0,0,0,6"/>
+
+                            <TextBox
+                                x:Name="ServerPortTextBox"
+                                Style="{StaticResource DarkTextBox}"
+                                Text="7777"/>
+
+                        </StackPanel>
+
+
+                        <StackPanel
+                            Grid.Column="2"
+                            Margin="8,0">
+
+                            <TextBlock
+                                Text="Query Port"
+                                Foreground="#7F8796"
+                                Margin="0,0,0,6"/>
+
+                            <TextBox
+                                x:Name="QueryPortTextBox"
+                                Style="{StaticResource DarkTextBox}"
+                                Text="27015"/>
+
+                        </StackPanel>
+
+
+                        <StackPanel
+                            Grid.Column="3"
                             Margin="8,0,0,0">
 
                             <TextBlock
-                                Text="GameUserSettings.ini"
-                                Foreground="White"
-                                FontWeight="Bold"
-                                FontSize="14"/>
-
-                            <TextBlock
-                                Text="Edit server name, passwords, rates, admin settings and other user/server options."
+                                Text="Max Players"
                                 Foreground="#7F8796"
-                                FontSize="11"
-                                TextWrapping="Wrap"
-                                Margin="0,5,0,8"/>
+                                Margin="0,0,0,6"/>
 
-                            <Button
-                                Content="Edit GameUserSettings.ini"
-                                Style="{StaticResource SecondaryButton}"
-                                HorizontalAlignment="Left"
-                                Click="EditGameUserSettingsButton_Click"/>
+                            <TextBox
+                                x:Name="MaxPlayersTextBox"
+                                Style="{StaticResource DarkTextBox}"
+                                Text="70"/>
 
                         </StackPanel>
 
                     </Grid>
 
-                </Border>
 
+                    <!-- ================================================= -->
+                    <!-- DIFFICULTY / PASSWORDS -->
+                    <!-- ================================================= -->
 
-                <!-- ================================================= -->
-                <!-- STEAMCMD STATUS -->
-                <!-- ================================================= -->
-
-                <Border
-                    Grid.Row="6"
-                    Background="#14171C"
-                    BorderBrush="#30343D"
-                    BorderThickness="1"
-                    CornerRadius="6"
-                    Padding="15"
-                    Margin="0,0,0,12">
-
-                    <Grid>
+                    <Grid
+                        Grid.Row="3"
+                        Margin="0,0,0,12">
 
                         <Grid.ColumnDefinitions>
 
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
 
                         </Grid.ColumnDefinitions>
 
 
-                        <TextBlock
+                        <!-- DIFFICULTY -->
+
+                        <StackPanel
                             Grid.Column="0"
-                            Text="SteamCMD"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            VerticalAlignment="Center"
-                            Margin="0,0,20,0"/>
+                            Margin="0,0,8,0">
+
+                            <TextBlock
+                                Text="Difficulty"
+                                Foreground="#7F8796"
+                                Margin="0,0,0,6"/>
+
+                            <ComboBox
+                                x:Name="DifficultyComboBox"
+                                Style="{StaticResource DarkComboBox}"
+                                ItemContainerStyle="{StaticResource DarkComboBoxItem}">
+
+                                <ComboBoxItem Content="0.5"/>
+                                <ComboBoxItem Content="1.0" IsSelected="True"/>
+                                <ComboBoxItem Content="2.0"/>
+                                <ComboBoxItem Content="3.0"/>
+                                <ComboBoxItem Content="4.0"/>
+                                <ComboBoxItem Content="5.0"/>
+
+                            </ComboBox>
+
+                        </StackPanel>
 
 
-                        <TextBlock
-                            x:Name="SteamCmdStatusText"
+                        <!-- ================================================= -->
+                        <!-- SERVER PASSWORD -->
+                        <!-- ================================================= -->
+
+                        <StackPanel
                             Grid.Column="1"
-                            Text="● Checking..."
-                            Foreground="Gold"
-                            FontWeight="Bold"
-                            VerticalAlignment="Center"
-                            Margin="0,0,20,0"/>
+                            Margin="8,0">
+
+                            <TextBlock
+                                Text="Server Password"
+                                Foreground="#7F8796"
+                                Margin="0,0,0,6"/>
+
+                            <Grid>
+
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+
+                                </Grid.ColumnDefinitions>
 
 
-                        <TextBlock
-                            x:Name="SteamCmdLocationText"
+                                <!-- PASSWORD VERSION -->
+
+                                <PasswordBox
+                                    x:Name="ServerPasswordBox"
+                                    Grid.Column="0"
+                                    Style="{StaticResource DarkPasswordBox}"
+                                    Visibility="Visible"/>
+
+
+                                <!-- VISIBLE / EDITABLE VERSION -->
+
+                                <TextBox
+                                    x:Name="ServerPasswordTextBox"
+                                    Grid.Column="0"
+                                    Style="{StaticResource DarkTextBox}"
+                                    Visibility="Collapsed"/>
+
+
+                                <!-- SHOW / HIDE -->
+
+                                <CheckBox
+                                    x:Name="ServerPasswordToggleCheckBox"
+                                    Grid.Column="1"
+                                    Content="Show"
+                                    Foreground="White"
+                                    VerticalAlignment="Center"
+                                    Margin="8,0,0,0"
+                                    Checked="ServerPasswordToggleCheckBox_Checked"
+                                    Unchecked="ServerPasswordToggleCheckBox_Unchecked"/>
+
+                            </Grid>
+
+                        </StackPanel>
+
+
+                        <!-- ================================================= -->
+                        <!-- ADMIN PASSWORD -->
+                        <!-- ================================================= -->
+
+                        <StackPanel
                             Grid.Column="2"
-                            Text="Checking..."
-                            Foreground="#7F8796"
-                            VerticalAlignment="Center"
-                            TextWrapping="Wrap"/>
+                            Margin="8,0">
+
+                            <TextBlock
+                                Text="Admin Password"
+                                Foreground="#7F8796"
+                                Margin="0,0,0,6"/>
+
+                            <Grid>
+
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+
+                                </Grid.ColumnDefinitions>
 
 
-                        <Button
-                            x:Name="InstallSteamCmdButton"
+                                <!-- PASSWORD VERSION -->
+
+                                <PasswordBox
+                                    x:Name="AdminPasswordBox"
+                                    Grid.Column="0"
+                                    Style="{StaticResource DarkPasswordBox}"
+                                    Visibility="Visible"/>
+
+
+                                <!-- VISIBLE / EDITABLE VERSION -->
+
+                                <TextBox
+                                    x:Name="AdminPasswordTextBox"
+                                    Grid.Column="0"
+                                    Style="{StaticResource DarkTextBox}"
+                                    Visibility="Collapsed"/>
+
+
+                                <!-- SHOW / HIDE -->
+
+                                <CheckBox
+                                    x:Name="AdminPasswordToggleCheckBox"
+                                    Grid.Column="1"
+                                    Content="Show"
+                                    Foreground="White"
+                                    VerticalAlignment="Center"
+                                    Margin="8,0,0,0"
+                                    Checked="AdminPasswordToggleCheckBox_Checked"
+                                    Unchecked="AdminPasswordToggleCheckBox_Unchecked"/>
+
+                            </Grid>
+
+                        </StackPanel>
+
+
+                        <!-- PVE / CROSSPLAY -->
+
+                        <StackPanel
                             Grid.Column="3"
-                            Content="Set Up SteamCMD"
-                            Style="{StaticResource SecondaryButton}"
-                            Click="InstallSteamCmdButton_Click"/>
+                            Margin="8,20,0,0">
+
+                            <CheckBox
+                                x:Name="PvECheckBox"
+                                Content="PvE"/>
+
+                            <CheckBox
+                                x:Name="CrossplayCheckBox"
+                                Content="Crossplay"
+                                IsChecked="True"/>
+
+                        </StackPanel>
 
                     </Grid>
 
-                </Border>
+
+                    <!-- ================================================= -->
+                    <!-- WHITELIST  penis--> 
+                    <!-- ================================================= -->
+
+                    <Border
+                        Grid.Row="4"
+                        Background="#14171C"
+                        BorderBrush="#30343D"
+                        BorderThickness="1"
+                        CornerRadius="6"
+                        Padding="15"
+                        Margin="0,0,0,12">
+
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="220"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
 
 
-                <!-- ================================================= -->
-                <!-- CONFIGURATION SAVE/LOAD -->
-                <!-- ================================================= -->
-
-                <StackPanel
-                    Grid.Row="7"
-                    Orientation="Horizontal"
-                    HorizontalAlignment="Right">
-
-                    <Button
-                        Content="Save Configuration"
-                        Style="{StaticResource SecondaryButton}"
-                        Click="SaveConfigButton_Click"/>
-
-                    <Button
-                        Content="Load Configuration"
-                        Style="{StaticResource SecondaryButton}"
-                        Click="LoadConfigButton_Click"/>
-
-                </StackPanel>
-
-            </Grid>
-
-        </Border>
+                            <CheckBox
+                                x:Name="WhitelistEnabledCheckBox"
+                                Grid.Column="0"
+                                Content="Enable Whitelist"
+                                VerticalAlignment="Center"
+                                Margin="0,0,20,0"
+                                Checked="WhitelistSettings_Changed"
+                                Unchecked="WhitelistSettings_Changed"/>
 
 
-        <!-- ================================================= -->
-        <!-- MODS -->
-        <!-- ================================================= -->
+                            <StackPanel
+                                Grid.Column="1"
+                                Margin="0,0,15,0">
 
-        <Border
-            Grid.Row="2"
-            Background="#191C22"
-            CornerRadius="8"
-            Padding="20"
-            Margin="0,0,0,20">
+                                <TextBlock
+                                    Text="Whitelist Mode"
+                                    Foreground="#7F8796"
+                                    FontSize="12"
+                                    Margin="0,0,0,5"/>
 
-            <Grid>
+                               <ComboBox
+                                    x:Name="WhitelistModeComboBox"
+                                    Style="{StaticResource DarkComboBox}"
+                                    ItemContainerStyle="{StaticResource DarkComboBoxItem}"
+                                    SelectedIndex="1">
 
-                <Grid.RowDefinitions>
+                                    <ComboBoxItem Content="Player IDs"/>
+                                    <ComboBoxItem Content="Steam IDs"/>
 
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
+                                </ComboBox>
 
-                </Grid.RowDefinitions>
-
-
-                <TextBlock
-                    Grid.Row="0"
-                    Text="Mods"
-                    Foreground="White"
-                    FontSize="20"
-                    FontWeight="Bold"/>
+                            </StackPanel>
 
 
-                <TextBlock
-                    Grid.Row="1"
-                    Text="Enter one CurseForge/ASA mod ID per line. Comma-separated IDs are also supported."
-                    Foreground="#7F8796"
-                    Margin="0,5,0,12"/>
+                            <StackPanel
+                                Grid.Column="2">
+
+                                <TextBlock
+                                    Text="Whitelist Players"
+                                    Foreground="#7F8796"
+                                    FontSize="12"
+                                    Margin="0,0,0,5"/>
+
+                                <TextBox
+                                    x:Name="WhitelistTextBox"
+                                    Style="{StaticResource DarkTextBox}"
+                                    MinHeight="45"
+                                    AcceptsReturn="True"
+                                    TextWrapping="Wrap"
+                                    VerticalScrollBarVisibility="Auto"
+                                    TextChanged="WhitelistSettings_Changed"/>
+
+                            </StackPanel>
+
+                        </Grid>
+
+                    </Border>
 
 
-                <TextBox
-                    x:Name="ModsTextBox"
-                    Grid.Row="2"
-                    MinHeight="100"
-                    AcceptsReturn="True"
-                    VerticalScrollBarVisibility="Auto"
-                    TextWrapping="Wrap"
-                    Style="{StaticResource DarkTextBox}"
-                    TextChanged="ModsTextBox_TextChanged"/>
+                    <!-- ================================================= -->
+                    <!-- CLUSTER -->
+                    <!-- ================================================= -->
 
-            </Grid>
+                    <Border
+                        Grid.Row="5"
+                        Background="#14171C"
+                        BorderBrush="#30343D"
+                        BorderThickness="1"
+                        CornerRadius="6"
+                        Padding="15"
+                        Margin="0,0,0,12">
 
-        </Border>
+                        <Grid>
 
+                            <Grid.ColumnDefinitions>
 
-        <!-- ================================================= -->
-        <!-- LIVE LAUNCH OPTIONS -->
-        <!-- ================================================= -->
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="220"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
 
-        <Border
-            Grid.Row="3"
-            Background="#191C22"
-            CornerRadius="8"
-            Padding="20"
-            Margin="0,0,0,20">
-
-            <Grid>
-
-                <Grid.RowDefinitions>
-
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-
-                </Grid.RowDefinitions>
+                            </Grid.ColumnDefinitions>
 
 
-                <Grid Grid.Row="0">
-
-                    <Grid.ColumnDefinitions>
-
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-
-                    </Grid.ColumnDefinitions>
+                            <CheckBox
+                                x:Name="ClusterEnabledCheckBox"
+                                Grid.Column="0"
+                                Content="Enable Cluster"
+                                VerticalAlignment="Center"
+                                Margin="0,0,20,0"/>
 
 
-                    <StackPanel Grid.Column="0">
+                            <StackPanel
+                                Grid.Column="1"
+                                Margin="0,0,15,0">
 
-                        <TextBlock
-                            Text="Launch Options"
-                            Foreground="White"
-                            FontSize="20"
-                            FontWeight="Bold"/>
+                                <TextBlock
+                                    Text="Cluster ID"
+                                    Foreground="#7F8796"
+                                    FontSize="12"
+                                    Margin="0,0,0,5"/>
 
-                        <TextBlock
-                            Text="Live preview of exactly what will be launched."
-                            Foreground="#7F8796"
-                            Margin="0,5,0,0"/>
+                                <TextBox
+                                    x:Name="ClusterIdTextBox"
+                                    Style="{StaticResource DarkTextBox}"
+                                    Text="ASACluster"/>
 
-                    </StackPanel>
+                            </StackPanel>
 
 
-                    <TextBlock
-                        Grid.Column="1"
-                        Text="● LIVE"
-                        Foreground="#59D66F"
-                        FontWeight="Bold"
-                        VerticalAlignment="Center"/>
+                            <StackPanel
+    Grid.Column="2"
+    Margin="0,0,15,0">
+
+    <TextBlock
+        Text="Cluster Directory"
+        Foreground="#7F8796"
+        FontSize="12"
+        Margin="0,0,0,5"/>
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+
+        </Grid.ColumnDefinitions>
+
+        <TextBox
+            x:Name="ClusterDirectoryTextBox"
+            Grid.Column="0"
+            Style="{StaticResource DarkTextBox}"/>
+
+        <Button
+            Grid.Column="1"
+            Content="Browse"
+            Style="{StaticResource SecondaryButton}"
+            Click="BrowseClusterDirectoryButton_Click"/>
+
+    </Grid>
+
+</StackPanel>
+
+                            <TextBlock
+                                Grid.Column="3"
+                                Text="Cross-server character / item / creature transfers"
+                                Foreground="#7F8796"
+                                VerticalAlignment="Center"
+                                FontSize="11"/>
+
+                        </Grid>
+
+                    </Border>
+
+
+                    <!-- ================================================= -->
+                    <!-- STEAMCMD -->
+                    <!-- ================================================= -->
+
+                    <Border
+                        Grid.Row="6"
+                        Background="#14171C"
+                        BorderBrush="#30343D"
+                        BorderThickness="1"
+                        CornerRadius="6"
+                        Padding="15">
+
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <TextBlock
+                                Grid.Column="0"
+                                Text="SteamCMD"
+                                Foreground="White"
+                                FontWeight="Bold"
+                                VerticalAlignment="Center"
+                                Margin="0,0,20,0"/>
+
+
+                            <TextBlock
+                                x:Name="SteamCmdStatusText"
+                                Grid.Column="1"
+                                Text="● Checking..."
+                                Foreground="Gold"
+                                FontWeight="Bold"
+                                VerticalAlignment="Center"
+                                Margin="0,0,20,0"/>
+
+
+                            <TextBlock
+                                x:Name="SteamCmdLocationText"
+                                Grid.Column="2"
+                                Text="Checking..."
+                                Foreground="#7F8796"
+                                VerticalAlignment="Center"
+                                TextWrapping="Wrap"/>
+
+
+                            <Button
+                                x:Name="InstallSteamCmdButton"
+                                Grid.Column="3"
+                                Content="Set Up SteamCMD"
+                                Style="{StaticResource SecondaryButton}"
+                                Click="InstallSteamCmdButton_Click"/>
+
+                        </Grid>
+
+                    </Border>
 
                 </Grid>
 
-
-                <TextBox
-                    x:Name="LaunchOptionsTextBox"
-                    Grid.Row="1"
-                    Margin="0,15,0,0"
-                    MinHeight="90"
-                    IsReadOnly="True"
-                    TextWrapping="Wrap"
-                    VerticalScrollBarVisibility="Auto"
-                    Style="{StaticResource DarkTextBox}"/>
-
-            </Grid>
-
-        </Border>
-
-
-        <!-- ================================================= -->
-        <!-- SERVER CONTROLS + SERVER MANAGEMENT -->
-        <!-- ================================================= -->
-
-        <Grid
-            Grid.Row="4"
-            Margin="0,0,0,20">
-
-            <Grid.ColumnDefinitions>
-
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="*"/>
-
-            </Grid.ColumnDefinitions>
+            </Border>
 
 
             <!-- ================================================= -->
-            <!-- SERVER CONTROLS -->
+            <!-- MODS -->
             <!-- ================================================= -->
 
             <Border
-                Grid.Column="0"
+                Grid.Row="2"
                 Background="#191C22"
                 CornerRadius="8"
                 Padding="20"
-                Margin="0,0,10,0">
+                Margin="0,0,0,20">
 
                 <Grid>
 
@@ -1235,60 +1071,458 @@
 
                     <TextBlock
                         Grid.Row="0"
-                        Text="Server Controls"
+                        Text="Mods"
                         Foreground="White"
                         FontSize="20"
-                        FontWeight="Bold"
-                        Margin="0,0,0,20"/>
+                        FontWeight="Bold"/>
 
 
-                    <StackPanel
+                    <TextBlock
                         Grid.Row="1"
-                        Orientation="Horizontal"
-                        Margin="0,0,0,15">
+                        Text="Enter one CurseForge/ASA mod ID per line. Comma-separated IDs are also supported."
+                        Foreground="#7F8796"
+                        Margin="0,5,0,12"/>
+
+
+                    <TextBox
+                        x:Name="ModsTextBox"
+                        Grid.Row="2"
+                        MinHeight="100"
+                        AcceptsReturn="True"
+                        VerticalScrollBarVisibility="Auto"
+                        TextWrapping="Wrap"
+                        Style="{StaticResource DarkTextBox}"
+                        TextChanged="ModsTextBox_TextChanged"/>
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- ================================================= -->
+            <!-- LIVE LAUNCH OPTIONS -->
+            <!-- ================================================= -->
+
+            <Border
+                Grid.Row="3"
+                Background="#191C22"
+                CornerRadius="8"
+                Padding="20"
+                Margin="0,0,0,20">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+
+
+                    <Grid Grid.Row="0">
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+
+                        </Grid.ColumnDefinitions>
+
+
+                        <StackPanel Grid.Column="0">
+
+                            <TextBlock
+                                Text="Launch Options"
+                                Foreground="White"
+                                FontSize="20"
+                                FontWeight="Bold"/>
+
+                            <TextBlock
+                                Text="Live preview of exactly what will be launched."
+                                Foreground="#7F8796"
+                                Margin="0,5,0,0"/>
+
+                        </StackPanel>
+
+
+                        <TextBlock
+                            Grid.Column="1"
+                            Text="● LIVE"
+                            Foreground="#59D66F"
+                            FontWeight="Bold"
+                            VerticalAlignment="Center"/>
+
+                    </Grid>
+
+
+                    <TextBox
+                        x:Name="LaunchOptionsTextBox"
+                        Grid.Row="1"
+                        Margin="0,15,0,0"
+                        MinHeight="90"
+                        IsReadOnly="False"
+                        TextWrapping="Wrap"
+                        VerticalScrollBarVisibility="Auto"
+                        Style="{StaticResource DarkTextBox}"/>
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- ================================================= -->
+            <!-- SERVER CONTROLS / MANAGEMENT -->
+            <!-- ================================================= -->
+
+            <Grid
+                Grid.Row="4"
+                Margin="0">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+
+                <!-- SERVER CONTROLS -->
+
+                <Border
+                    Grid.Column="0"
+                    Background="#191C22"
+                    CornerRadius="8"
+                    Padding="20"
+                    Margin="0,0,10,0">
+
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+
+                        </Grid.RowDefinitions>
+
+
+                        <TextBlock
+                            Grid.Row="0"
+                            Text="Server Controls"
+                            Foreground="White"
+                            FontSize="20"
+                            FontWeight="Bold"
+                            Margin="0,0,0,20"/>
+
+
+                                <StackPanel
+                                        Grid.Row="1"
+                                        Orientation="Horizontal"
+                                        Margin="0,0,0,15">
+
+                                        <Button
+                                            x:Name="StartServerButton"
+                                            Content="Start Server"
+                                            Style="{StaticResource PrimaryButton}"
+                                            Width="130"
+                                            Click="StartServerButton_Click"/>
+                                            <Button
+                                                x:Name="StopServerButton"
+                                                Content="Stop Server"
+                                                Style="{StaticResource SecondaryButton}"
+                                                Width="130"
+                                                Click="StopServerButton_Click"
+                                                IsEnabled="False"/>
+
+                                        <Button
+                                            x:Name="StartClusterButton"
+                                            Content="Start Cluster"
+                                            Style="{StaticResource PrimaryButton}"
+                                            Width="130"
+                                            Click="StartClusterButton_Click"/>
+                                                                                    <Button
+                                            x:Name="StopClusterButton"
+                                            Content="Stop Cluster"
+                                            Style="{StaticResource SecondaryButton}"
+                                            Width="130"
+                                            Click="StopClusterButton_Click"
+                                            IsEnabled="False"/>
+                                        <Button
+                                            x:Name="RestartServerButton"
+                                            Content="Restart"
+                                            Style="{StaticResource SecondaryButton}"
+                                            Width="130"
+                                            Click="RestartServerButton_Click"/>
+
+                                        <Button
+                                            x:Name="SaveWorldButton"
+                                            Content="Save World"
+                                            Style="{StaticResource PrimaryButton}"
+                                            Width="130"
+                                            Click="SaveWorldButton_Click"/>
+
+                                    </StackPanel>
+
+
+                        <Grid Grid.Row="2">
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <StackPanel Grid.Column="0">
+
+                                <TextBlock
+                                    Text="Runtime Status"
+                                    Foreground="#7F8796"/>
+
+                                <TextBlock
+                                    x:Name="ServerRuntimeStatusText"
+                                    Text="● OFFLINE"
+                                    Foreground="IndianRed"
+                                    FontWeight="Bold"
+                                    Margin="0,4,0,0"/>
+
+                                <TextBlock
+                                    x:Name="ServerProcessIdText"
+                                    Foreground="#7F8796"
+                                    Margin="0,4,0,0"/>
+
+                            </StackPanel>
+
+
+                            <Button
+                                Grid.Column="1"
+                                Content="Edit Game.ini"
+                                Style="{StaticResource SecondaryButton}"
+                                Click="EditGameIniButton_Click"/>
+
+
+                            <Button
+                                Grid.Column="2"
+                                Content="Edit GameUserSettings.ini"
+                                Style="{StaticResource SecondaryButton}"
+                                Click="EditGameUserSettingsButton_Click"/>
+
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- SERVER MANAGEMENT -->
+
+                <Border
+                    Grid.Column="1"
+                    Background="#191C22"
+                    CornerRadius="8"
+                    Padding="20"
+                    Margin="10,0,0,0">
+
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+
+                        <TextBlock
+                            Grid.Row="0"
+                            Text="Server Management"
+                            Foreground="White"
+                            FontSize="20"
+                            FontWeight="Bold"
+                            Margin="0,0,0,20"/>
+
 
                         <Button
-                            x:Name="StartServerButton"
-                            Content="Start Server"
-                            Style="{StaticResource PrimaryButton}"
-                            Width="130"
-                            Click="StartServerButton_Click"/>
+                                Grid.Row="1"
+                                x:Name="InstallServerButton"
+                                Content="Install Server"
+                                Style="{StaticResource PrimaryButton}"
+                                Click="InstallServerButton_Click"
+                                HorizontalAlignment="Stretch"/>
 
-                        <Button
-                            x:Name="StopServerButton"
-                            Content="Stop Server"
-                            Style="{StaticResource SecondaryButton}"
-                            Width="130"
-                            Click="StopServerButton_Click"/>
+                            <Button
+                                Grid.Row="2"
+                                x:Name="UpdateServerButton"
+                                Content="Update Server"
+                                Style="{StaticResource PrimaryButton}"
+                                Click="UpdateServerButton_Click"
+                                HorizontalAlignment="Stretch"/>
 
-                        <Button
-                            x:Name="RestartServerButton"
-                            Content="Restart"
-                            Style="{StaticResource SecondaryButton}"
-                            Width="130"
-                            Click="RestartServerButton_Click"/>
+                            <Button
+                                Grid.Row="3"
+                                x:Name="VerifyServerButton"
+                                Content="Verify Files"
+                                Style="{StaticResource SecondaryButton}"
+                                Click="VerifyServerButton_Click"
+                                HorizontalAlignment="Stretch"/>
+
+                            
+
+
+                        <StackPanel
+                            Grid.Row="4"
+                            Margin="5,15,5,0">
+
+                            <Button
+                                Content="Save Configuration"
+                                Style="{StaticResource SecondaryButton}"
+                                Click="SaveConfigButton_Click"
+                                HorizontalAlignment="Stretch"/>
+
+                            <Button
+                                Content="Load Configuration"
+                                Style="{StaticResource SecondaryButton}"
+                                Click="LoadConfigButton_Click"
+                                HorizontalAlignment="Stretch"/>
+
+                        </StackPanel>
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- ================================================= -->
+            <!-- SUMMARY -->
+            <!-- ================================================= -->
+
+            <Border
+                Grid.Row="5"
+                Background="#191C22"
+                CornerRadius="8"
+                Padding="20"
+                Margin="0,20,0,0">
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+
+                    <!-- MAP -->
+
+                    <StackPanel Grid.Column="0">
+
+                        <TextBlock
+                            Text="MAP"
+                            Foreground="#7F8796"
+                            FontSize="11"
+                            FontWeight="Bold"/>
+
+                        <TextBlock
+                            x:Name="SummaryMapText"
+                            Text="Not configured"
+                            Foreground="White"
+                            FontSize="15"
+                            FontWeight="SemiBold"
+                            Margin="0,5,0,0"/>
 
                     </StackPanel>
 
 
-                    <StackPanel
-                        Grid.Row="2">
+                    <!-- PLAYERS -->
+
+                    <StackPanel Grid.Column="1">
 
                         <TextBlock
-                            Text="Runtime Status"
-                            Foreground="#7F8796"/>
-
-                        <TextBlock
-                            x:Name="ServerRuntimeStatusText"
-                            Text="● OFFLINE"
-                            Foreground="IndianRed"
-                            FontWeight="Bold"
-                            Margin="0,4,0,0"/>
-
-                        <TextBlock
-                            x:Name="ServerProcessIdText"
+                            Text="PLAYERS"
                             Foreground="#7F8796"
-                            Margin="0,4,0,0"/>
+                            FontSize="11"
+                            FontWeight="Bold"/>
+
+                        <TextBlock
+                            x:Name="SummaryPlayersText"
+                            Text="0 / 0"
+                            Foreground="White"
+                            FontSize="15"
+                            FontWeight="SemiBold"
+                            Margin="0,5,0,0"/>
+
+                    </StackPanel>
+
+
+                    <!-- MODS -->
+
+                    <StackPanel Grid.Column="2">
+
+                        <TextBlock
+                            Text="MODS"
+                            Foreground="#7F8796"
+                            FontSize="11"
+                            FontWeight="Bold"/>
+
+                        <TextBlock
+                            x:Name="SummaryModsText"
+                            Text="0"
+                            Foreground="White"
+                            FontSize="15"
+                            FontWeight="SemiBold"
+                            Margin="0,5,0,0"/>
+
+                    </StackPanel>
+
+
+                    <!-- CLUSTER -->
+
+                    <StackPanel Grid.Column="3">
+
+                        <TextBlock
+                            Text="CLUSTER"
+                            Foreground="#7F8796"
+                            FontSize="11"
+                            FontWeight="Bold"/>
+
+                        <TextBlock
+                            x:Name="SummaryClusterText"
+                            Text="Disabled"
+                            Foreground="White"
+                            FontSize="15"
+                            FontWeight="SemiBold"
+                            Margin="0,5,0,0"/>
+
+                    </StackPanel>
+
+
+                    <!-- WHITELIST -->
+
+                    <StackPanel Grid.Column="4">
+
+                        <TextBlock
+                            Text="WHITELIST"
+                            Foreground="#7F8796"
+                            FontSize="11"
+                            FontWeight="Bold"/>
+
+                        <TextBlock
+                            x:Name="SummaryWhitelistText"
+                            Text="Disabled"
+                            Foreground="White"
+                            FontSize="15"
+                            FontWeight="SemiBold"
+                            Margin="0,5,0,0"/>
 
                     </StackPanel>
 
@@ -1298,52 +1532,82 @@
 
 
             <!-- ================================================= -->
-            <!-- SERVER MANAGEMENT -->
+            <!-- CONSOLE -->
             <!-- ================================================= -->
 
             <Border
-                Grid.Column="1"
+                Grid.Row="6"
                 Background="#191C22"
                 CornerRadius="8"
                 Padding="20"
-                Margin="10,0,0,0">
+                Margin="0,20,0,30">
 
                 <Grid>
 
                     <Grid.RowDefinitions>
 
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="300"/>
 
                     </Grid.RowDefinitions>
 
 
-                    <TextBlock
-                        Grid.Row="0"
-                        Text="Server Management"
-                        Foreground="White"
-                        FontSize="20"
-                        FontWeight="Bold"
-                        Margin="0,0,0,20"/>
+                    <!-- CONSOLE HEADER -->
+
+                    <Grid Grid.Row="0">
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+
+                        </Grid.ColumnDefinitions>
 
 
-                    <Button
+                        <StackPanel Grid.Column="0">
+
+                            <TextBlock
+                                Text="Console"
+                                Foreground="White"
+                                FontSize="20"
+                                FontWeight="Bold"/>
+
+                            <TextBlock
+                                Text="SteamCMD and ASA server output"
+                                Foreground="#7F8796"
+                                Margin="0,5,0,0"/>
+
+                        </StackPanel>
+
+
+                        <Button
+                            x:Name="ClearConsoleButton"
+                            Grid.Column="1"
+                            Content="Clear Console"
+                            Style="{StaticResource SecondaryButton}"
+                            Click="ClearConsoleButton_Click"/>
+
+                    </Grid>
+
+
+                    <!-- CONSOLE OUTPUT -->
+
+                    <TextBox
+                        x:Name="ConsoleTextBox"
                         Grid.Row="1"
-                        x:Name="InstallServerButton"
-                        Content="Install Server"
-                        Style="{StaticResource PrimaryButton}"
-                        Click="InstallServerButton_Click"
-                        HorizontalAlignment="Stretch"/>
-
-
-                    <Button
-                        Grid.Row="2"
-                        x:Name="VerifyServerButton"
-                        Content="Verify Files"
-                        Style="{StaticResource SecondaryButton}"
-                        Click="VerifyServerButton_Click"
-                        HorizontalAlignment="Stretch"/>
+                        Margin="0,15,0,0"
+                        Background="#0D0F12"
+                        Foreground="#D7DCE5"
+                        BorderBrush="#30343D"
+                        BorderThickness="1"
+                        Padding="12"
+                        FontFamily="Consolas"
+                        FontSize="12"
+                        IsReadOnly="True"
+                        AcceptsReturn="True"
+                        TextWrapping="Wrap"
+                        VerticalScrollBarVisibility="Auto"
+                        HorizontalScrollBarVisibility="Auto"/>
 
                 </Grid>
 
@@ -1351,211 +1615,6 @@
 
         </Grid>
 
-
-        <!-- ================================================= -->
-        <!-- STEAMCMD CONSOLE -->
-        <!-- ================================================= -->
-
-        <Border
-            Grid.Row="5"
-            Background="#191C22"
-            CornerRadius="8"
-            Padding="20"
-            Margin="0,0,0,20">
-
-            <Grid>
-
-                <Grid.RowDefinitions>
-
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-
-                </Grid.RowDefinitions>
-
-
-                <Grid
-                    Grid.Row="0"
-                    Margin="0,0,0,15">
-
-                    <Grid.ColumnDefinitions>
-
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-
-                    </Grid.ColumnDefinitions>
-
-
-                    <StackPanel Grid.Column="0">
-
-                        <TextBlock
-                            Text="SteamCMD Console"
-                            Foreground="White"
-                            FontSize="20"
-                            FontWeight="Bold"/>
-
-                        <TextBlock
-                            Text="SteamCMD installation, update and verification output."
-                            Foreground="#7F8796"
-                            Margin="0,5,0,0"/>
-
-                    </StackPanel>
-
-
-                    <TextBlock
-                        Grid.Column="1"
-                        Text="● CONSOLE"
-                        Foreground="#59D66F"
-                        FontWeight="Bold"
-                        VerticalAlignment="Center"/>
-
-                </Grid>
-
-
-                <TextBox
-                    x:Name="ConsoleTextBox"
-                    Grid.Row="1"
-                    MinHeight="280"
-                    MaxHeight="450"
-                    Background="#0B0D10"
-                    Foreground="#D6D9DF"
-                    BorderBrush="#30343D"
-                    BorderThickness="1"
-                    Padding="12"
-                    FontFamily="Consolas"
-                    FontSize="12"
-                    AcceptsReturn="True"
-                    IsReadOnly="True"
-                    TextWrapping="NoWrap"
-                    HorizontalScrollBarVisibility="Auto"
-                    VerticalScrollBarVisibility="Auto"/>
-
-            </Grid>
-
-        </Border>
-
-
-        <!-- ================================================= -->
-        <!-- SUMMARY -->
-        <!-- ================================================= -->
-
-        <Border
-            Grid.Row="6"
-            Background="#191C22"
-            CornerRadius="8"
-            Padding="20"
-            Margin="0,0,0,20">
-
-            <Grid>
-
-                <Grid.ColumnDefinitions>
-
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-
-                </Grid.ColumnDefinitions>
-
-
-                <!-- MAP -->
-
-                <StackPanel Grid.Column="0">
-
-                    <TextBlock
-                        Text="MAP"
-                        Foreground="#7F8796"
-                        FontSize="11"
-                        FontWeight="Bold"/>
-
-                    <TextBlock
-                        x:Name="SummaryMapText"
-                        Text="Not configured"
-                        Foreground="White"
-                        FontSize="15"
-                        FontWeight="SemiBold"
-                        Margin="0,5,0,0"/>
-
-                </StackPanel>
-
-
-                <!-- PLAYERS -->
-
-                <StackPanel Grid.Column="1">
-
-                    <TextBlock
-                        Text="PLAYERS"
-                        Foreground="#7F8796"
-                        FontSize="11"
-                        FontWeight="Bold"/>
-
-                    <TextBlock
-                        x:Name="SummaryPlayersText"
-                        Text="0 / 0"
-                        Foreground="White"
-                        FontSize="15"
-                        FontWeight="SemiBold"
-                        Margin="0,5,0,0"/>
-
-                </StackPanel>
-
-
-                <!-- MODS -->
-
-                <StackPanel Grid.Column="2">
-
-                    <TextBlock
-                        Text="MODS"
-                        Foreground="#7F8796"
-                        FontSize="11"
-                        FontWeight="Bold"/>
-
-                    <TextBlock
-                        x:Name="SummaryModsText"
-                        Text="0"
-                        Foreground="White"
-                        FontSize="15"
-                        FontWeight="SemiBold"
-                        Margin="0,5,0,0"/>
-
-                </StackPanel>
-
-
-                <!-- CLUSTER -->
-
-                <StackPanel Grid.Column="3">
-
-                    <TextBlock
-                        Text="CLUSTER"
-                        Foreground="#7F8796"
-                        FontSize="11"
-                        FontWeight="Bold"/>
-
-                    <TextBlock
-                        x:Name="SummaryClusterText"
-                        Text="Disabled"
-                        Foreground="White"
-                        FontSize="15"
-                        FontWeight="SemiBold"
-                        Margin="0,5,0,0"/>
-
-                </StackPanel>
-
-            </Grid>
-
-        </Border>
-
-
-        <!-- ================================================= -->
-        <!-- BOTTOM SPACER -->
-        <!-- ================================================= -->
-
-        <Border
-            Grid.Row="7"
-            Height="20"
-            Background="Transparent"/>
-
-    </Grid>
-
-</ScrollViewer>
+    </ScrollViewer>
 
 </UserControl>

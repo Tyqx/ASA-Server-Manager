@@ -1,0 +1,1 @@
+requires .net 5

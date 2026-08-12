@@ -243,30 +243,6 @@ Repeat for every server
 
 ---
 
-# 🖼️ Screenshots
-
-Add screenshots of the application here.
-
-For example:
-
-```markdown
-![Server Manager](screenshots/server-manager.png)
-
-![Server Configuration](screenshots/server-config.png)
-
-![Server Console](screenshots/server-console.png)
-```
-
-Recommended screenshots:
-
-* Main dashboard
-* Server configuration
-* Server console
-* SteamCMD/update interface
-* Whitelist management
-* Multiple server view
-
----
 
 # 📦 Installation
 

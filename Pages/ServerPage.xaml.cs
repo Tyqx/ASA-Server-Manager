@@ -13,12 +13,21 @@ using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Application = System.Windows.Application;
+using Button = System.Windows.Controls.Button;
+using ComboBox = System.Windows.Controls.ComboBox;
+using UserControl = System.Windows.Controls.UserControl;
+using Orientation = System.Windows.Controls.Orientation;
+using Brush = System.Windows.Media.Brush;
+using Brushes = System.Windows.Media.Brushes;
+using MessageBox = System.Windows.MessageBox;
+
 using ASAServerManager.Server;
 using ASAServerManager.SteamCMD;
 
 namespace ASAServerManager.Pages
 {
-    public partial class ServerPage : UserControl
+    public partial class ServerPage : System.Windows.Controls.UserControl
     {
         // =========================================================
         // MULTI-SERVER IDENTITY
@@ -1099,7 +1108,7 @@ private string GetIniValue(
         // =========================================================
 
         private string GetComboBoxValue(
-    ComboBox comboBox,
+    System.Windows.Controls.ComboBox comboBox,
     string defaultValue)
 {
     if (comboBox == null)
@@ -1122,7 +1131,7 @@ private string GetIniValue(
 
 
 private void SetComboBoxValue(
-    ComboBox comboBox,
+    System.Windows.Controls.ComboBox comboBox,
     string value,
     string defaultValue)
 {
@@ -5149,7 +5158,7 @@ public async Task StopServerForClusterAsync()
 
         private void UpdateRuntimeStatus(
             string text,
-            Brush color)
+            System.Windows.Media.Brush color)
         {
             if (ServerRuntimeStatusText == null)
                 return;

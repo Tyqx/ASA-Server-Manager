@@ -440,6 +440,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
 
                     </Grid.RowDefinitions>
 
@@ -453,7 +454,9 @@
                         Margin="0,0,0,20"/>
 
 
+                    <!-- ================================================= -->
                     <!-- SERVER PATH / NAME -->
+                    <!-- ================================================= -->
 
                     <Grid
                         Grid.Row="1"
@@ -521,10 +524,118 @@
                     </Grid>
 
 
+                    <!-- ================================================= -->
+                    <!-- SHARED CONFIGURATION -->
+                    <!-- ================================================= -->
+
+                    <Border
+    Grid.Row="2"
+    Background="#14171C"
+    BorderBrush="#30343D"
+    BorderThickness="1"
+    CornerRadius="6"
+    Padding="15"
+    Margin="0,0,0,12">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+
+        </Grid.ColumnDefinitions>
+
+
+        <!-- ENABLE SHARED CONFIGURATION -->
+
+        <CheckBox
+            x:Name="UseSharedConfigurationCheckBox"
+            Grid.Row="0"
+            Grid.Column="0"
+            Content="Use Shared Configuration"
+            VerticalAlignment="Center"
+            Margin="0,0,20,0"
+            Checked="SharedConfigurationSettings_Changed"
+            Unchecked="SharedConfigurationSettings_Changed"/>
+
+
+        <!-- SHARED CONFIGURATION PATH -->
+
+        <StackPanel
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="0,0,10,0">
+
+            <TextBlock
+                Text="Configuration Folder"
+                Foreground="#7F8796"
+                FontSize="12"
+                Margin="0,0,0,5"/>
+
+            <TextBox
+                x:Name="SharedConfigurationPathTextBox"
+                Style="{StaticResource DarkTextBox}"
+                IsEnabled="False"/>
+
+        </StackPanel>
+
+
+        <!-- BROWSE -->
+
+        <Button
+            x:Name="BrowseSharedConfigurationButton"
+            Grid.Row="0"
+            Grid.Column="2"
+            Content="Browse"
+            Style="{StaticResource SecondaryButton}"
+            VerticalAlignment="Bottom"
+            IsEnabled="False"
+            Click="BrowseSharedConfigurationButton_Click"/>
+
+
+        <!-- EXPLANATION -->
+
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Margin="0,12,0,0">
+
+            <TextBlock
+                Text="What is Shared Configuration?"
+                Foreground="White"
+                FontSize="12"
+                FontWeight="SemiBold"
+                Margin="0,0,0,4"/>
+
+            <TextBlock
+                Text="Use one configuration file across multiple servers. Servers using the same shared configuration will use the settings stored in the selected folder, making it easier to keep common server settings synchronized."
+                Foreground="#7F8796"
+                FontSize="11"
+                TextWrapping="Wrap"/>
+
+        </StackPanel>
+
+    </Grid>
+
+</Border>
+
+
+                    <!-- ================================================= -->
                     <!-- MAP / PORTS -->
+                    <!-- ================================================= -->
 
                     <Grid
-                        Grid.Row="2"
+                        Grid.Row="3"
                         Margin="0,0,0,12">
 
                         <Grid.ColumnDefinitions>
@@ -622,7 +733,7 @@
                     <!-- ================================================= -->
 
                     <Grid
-                        Grid.Row="3"
+                        Grid.Row="4"
                         Margin="0,0,0,12">
 
                         <Grid.ColumnDefinitions>
@@ -800,11 +911,11 @@
 
 
                     <!-- ================================================= -->
-                    <!-- WHITELIST  penis--> 
+                    <!-- WHITELIST -->
                     <!-- ================================================= -->
 
                     <Border
-                        Grid.Row="4"
+                        Grid.Row="5"
                         Background="#14171C"
                         BorderBrush="#30343D"
                         BorderThickness="1"
@@ -843,7 +954,7 @@
                                     FontSize="12"
                                     Margin="0,0,0,5"/>
 
-                               <ComboBox
+                                <ComboBox
                                     x:Name="WhitelistModeComboBox"
                                     Style="{StaticResource DarkComboBox}"
                                     ItemContainerStyle="{StaticResource DarkComboBoxItem}"
@@ -887,7 +998,7 @@
                     <!-- ================================================= -->
 
                     <Border
-                        Grid.Row="5"
+                        Grid.Row="6"
                         Background="#14171C"
                         BorderBrush="#30343D"
                         BorderThickness="1"
@@ -934,38 +1045,39 @@
 
 
                             <StackPanel
-    Grid.Column="2"
-    Margin="0,0,15,0">
+                                Grid.Column="2"
+                                Margin="0,0,15,0">
 
-    <TextBlock
-        Text="Cluster Directory"
-        Foreground="#7F8796"
-        FontSize="12"
-        Margin="0,0,0,5"/>
+                                <TextBlock
+                                    Text="Cluster Directory"
+                                    Foreground="#7F8796"
+                                    FontSize="12"
+                                    Margin="0,0,0,5"/>
 
-    <Grid>
+                                <Grid>
 
-        <Grid.ColumnDefinitions>
+                                    <Grid.ColumnDefinitions>
 
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
 
-        </Grid.ColumnDefinitions>
+                                    </Grid.ColumnDefinitions>
 
-        <TextBox
-            x:Name="ClusterDirectoryTextBox"
-            Grid.Column="0"
-            Style="{StaticResource DarkTextBox}"/>
+                                    <TextBox
+                                        x:Name="ClusterDirectoryTextBox"
+                                        Grid.Column="0"
+                                        Style="{StaticResource DarkTextBox}"/>
 
-        <Button
-            Grid.Column="1"
-            Content="Browse"
-            Style="{StaticResource SecondaryButton}"
-            Click="BrowseClusterDirectoryButton_Click"/>
+                                    <Button
+                                        Grid.Column="1"
+                                        Content="Browse"
+                                        Style="{StaticResource SecondaryButton}"
+                                        Click="BrowseClusterDirectoryButton_Click"/>
 
-    </Grid>
+                                </Grid>
 
-</StackPanel>
+                            </StackPanel>
+
 
                             <TextBlock
                                 Grid.Column="3"
@@ -984,7 +1096,7 @@
                     <!-- ================================================= -->
 
                     <Border
-                        Grid.Row="6"
+                        Grid.Row="7"
                         Background="#14171C"
                         BorderBrush="#30343D"
                         BorderThickness="1"
@@ -1216,53 +1328,56 @@
                             Margin="0,0,0,20"/>
 
 
-                                <StackPanel
-                                        Grid.Row="1"
-                                        Orientation="Horizontal"
-                                        Margin="0,0,0,15">
+                        <StackPanel
+                            Grid.Row="1"
+                            Orientation="Horizontal"
+                            Margin="0,0,0,15">
 
-                                        <Button
-                                            x:Name="StartServerButton"
-                                            Content="Start Server"
-                                            Style="{StaticResource PrimaryButton}"
-                                            Width="130"
-                                            Click="StartServerButton_Click"/>
-                                            <Button
-                                                x:Name="StopServerButton"
-                                                Content="Stop Server"
-                                                Style="{StaticResource SecondaryButton}"
-                                                Width="130"
-                                                Click="StopServerButton_Click"
-                                                IsEnabled="False"/>
+                            <Button
+                                x:Name="StartServerButton"
+                                Content="Start Server"
+                                Style="{StaticResource PrimaryButton}"
+                                Width="130"
+                                Click="StartServerButton_Click"/>
 
-                                        <Button
-                                            x:Name="StartClusterButton"
-                                            Content="Start Cluster"
-                                            Style="{StaticResource PrimaryButton}"
-                                            Width="130"
-                                            Click="StartClusterButton_Click"/>
-                                                                                    <Button
-                                            x:Name="StopClusterButton"
-                                            Content="Stop Cluster"
-                                            Style="{StaticResource SecondaryButton}"
-                                            Width="130"
-                                            Click="StopClusterButton_Click"
-                                            IsEnabled="False"/>
-                                        <Button
-                                            x:Name="RestartServerButton"
-                                            Content="Restart"
-                                            Style="{StaticResource SecondaryButton}"
-                                            Width="130"
-                                            Click="RestartServerButton_Click"/>
+                            <Button
+                                x:Name="StopServerButton"
+                                Content="Stop Server"
+                                Style="{StaticResource SecondaryButton}"
+                                Width="130"
+                                Click="StopServerButton_Click"
+                                IsEnabled="False"/>
 
-                                        <Button
-                                            x:Name="SaveWorldButton"
-                                            Content="Save World"
-                                            Style="{StaticResource PrimaryButton}"
-                                            Width="130"
-                                            Click="SaveWorldButton_Click"/>
+                            <Button
+                                x:Name="StartClusterButton"
+                                Content="Start Cluster"
+                                Style="{StaticResource PrimaryButton}"
+                                Width="130"
+                                Click="StartClusterButton_Click"/>
 
-                                    </StackPanel>
+                            <Button
+                                x:Name="StopClusterButton"
+                                Content="Stop Cluster"
+                                Style="{StaticResource SecondaryButton}"
+                                Width="130"
+                                Click="StopClusterButton_Click"
+                                IsEnabled="False"/>
+
+                            <Button
+                                x:Name="RestartServerButton"
+                                Content="Restart"
+                                Style="{StaticResource SecondaryButton}"
+                                Width="130"
+                                Click="RestartServerButton_Click"/>
+
+                            <Button
+                                x:Name="SaveWorldButton"
+                                Content="Save World"
+                                Style="{StaticResource PrimaryButton}"
+                                Width="130"
+                                Click="SaveWorldButton_Click"/>
+
+                        </StackPanel>
 
 
                         <Grid Grid.Row="2">
@@ -1329,12 +1444,14 @@
                     <Grid>
 
                         <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+
+                        </Grid.RowDefinitions>
 
 
                         <TextBlock
@@ -1347,30 +1464,28 @@
 
 
                         <Button
-                                Grid.Row="1"
-                                x:Name="InstallServerButton"
-                                Content="Install Server"
-                                Style="{StaticResource PrimaryButton}"
-                                Click="InstallServerButton_Click"
-                                HorizontalAlignment="Stretch"/>
+                            Grid.Row="1"
+                            x:Name="InstallServerButton"
+                            Content="Install Server"
+                            Style="{StaticResource PrimaryButton}"
+                            Click="InstallServerButton_Click"
+                            HorizontalAlignment="Stretch"/>
 
-                            <Button
-                                Grid.Row="2"
-                                x:Name="UpdateServerButton"
-                                Content="Update Server"
-                                Style="{StaticResource PrimaryButton}"
-                                Click="UpdateServerButton_Click"
-                                HorizontalAlignment="Stretch"/>
+                        <Button
+                            Grid.Row="2"
+                            x:Name="UpdateServerButton"
+                            Content="Update Server"
+                            Style="{StaticResource PrimaryButton}"
+                            Click="UpdateServerButton_Click"
+                            HorizontalAlignment="Stretch"/>
 
-                            <Button
-                                Grid.Row="3"
-                                x:Name="VerifyServerButton"
-                                Content="Verify Files"
-                                Style="{StaticResource SecondaryButton}"
-                                Click="VerifyServerButton_Click"
-                                HorizontalAlignment="Stretch"/>
-
-                            
+                        <Button
+                            Grid.Row="3"
+                            x:Name="VerifyServerButton"
+                            Content="Verify Files"
+                            Style="{StaticResource SecondaryButton}"
+                            Click="VerifyServerButton_Click"
+                            HorizontalAlignment="Stretch"/>
 
 
                         <StackPanel

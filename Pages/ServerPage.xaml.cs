@@ -86,6 +86,9 @@ namespace ASAServerManager.Pages
                 public string WhitelistIds { get; set; } = "";
 
                 public string WhitelistMode { get; set; } = "Steam IDs";
+                public bool UseSharedConfiguration { get; set; } = false;
+                public string SharedConfigurationPath { get; set; } = "";
+                
                     }
 
         // =========================================================
@@ -288,21 +291,37 @@ private void AdminPasswordToggleCheckBox_Unchecked(
         // ASA CONFIG DIRECTORY
         // =========================================================
 
-        private string GetAsaConfigDirectory()
+       private string GetAsaConfigDirectory()
+{
+    bool useShared =
+        UseSharedConfigurationCheckBox?.IsChecked == true;
+
+    if (useShared)
+    {
+        string sharedDirectory =
+            SharedConfigurationPathTextBox?.Text?.Trim() ?? "";
+
+        if (!string.IsNullOrWhiteSpace(sharedDirectory))
         {
-            string serverDirectory =
-                ServerPathTextBox?.Text?.Trim() ?? "";
+            Directory.CreateDirectory(sharedDirectory);
 
-            if (string.IsNullOrWhiteSpace(serverDirectory))
-                return "";
-
-            return Path.Combine(
-                serverDirectory,
-                "ShooterGame",
-                "Saved",
-                "Config",
-                "WindowsServer");
+            return sharedDirectory;
         }
+    }
+
+    string serverDirectory =
+        ServerPathTextBox?.Text?.Trim() ?? "";
+
+    if (string.IsNullOrWhiteSpace(serverDirectory))
+        return "";
+
+    return Path.Combine(
+        serverDirectory,
+        "ShooterGame",
+        "Saved",
+        "Config",
+        "WindowsServer");
+}
 
         private string GetGameIniPath()
         {
@@ -385,22 +404,16 @@ private void LoadPasswordsFromGameUserSettingsIni(
 
     try
     {
-        if (string.IsNullOrWhiteSpace(config.ServerPath))
+        string iniPath =
+            GetGameUserSettingsIniPath();
+
+        if (string.IsNullOrWhiteSpace(iniPath))
         {
             AppendConsole(
-                "PASSWORD LOAD: Server path is empty.");
+                "PASSWORD LOAD: Configuration path is empty.");
 
             return;
         }
-
-        string iniPath =
-            Path.Combine(
-                config.ServerPath,
-                "ShooterGame",
-                "Saved",
-                "Config",
-                "WindowsServer",
-                "GameUserSettings.ini");
 
         AppendConsole(
             "PASSWORD LOAD: Checking:");
@@ -865,7 +878,7 @@ private string GetIniValue(
         // APPLY CONFIGURATION
         // =========================================================
 
-        private void ApplyConfiguration(
+       private void ApplyConfiguration(
     ServerConfiguration config)
 {
     if (config == null)
@@ -884,6 +897,17 @@ private string GetIniValue(
             ServerPathTextBox.Text =
                 config.ServerPath ?? "";
         }
+
+        // =====================================================
+        // LOAD PASSWORDS FROM GAMEUSERSETTINGS.INI
+        // =====================================================
+
+        LoadPasswordsFromGameUserSettingsIni(
+            config);
+
+        // =====================================================
+        // SERVER SETTINGS
+        // =====================================================
 
         if (ServerNameTextBox != null)
         {
@@ -1046,6 +1070,18 @@ private string GetIniValue(
         _loadingConfiguration = false;
     }
 
+    if (UseSharedConfigurationCheckBox != null)
+    {
+        UseSharedConfigurationCheckBox.IsChecked =
+            config.UseSharedConfiguration;
+    }
+
+    if (SharedConfigurationPathTextBox != null)
+    {
+        SharedConfigurationPathTextBox.Text =
+            config.SharedConfigurationPath ?? "";
+    }
+
     // =====================================================
     // UPDATE UI AFTER EVERYTHING IS LOADED
     // =====================================================
@@ -1055,6 +1091,7 @@ private string GetIniValue(
     UpdateWhitelistSummary();
     UpdateServerStatus();
     UpdateLaunchOptions();
+    UpdateSharedConfigurationControls();
 }
 
         // =========================================================
@@ -1126,7 +1163,7 @@ private void SetComboBoxValue(
         // SAVE CONFIGURATION
         // =========================================================
 
-        private bool SaveConfiguration()
+       private bool SaveConfiguration()
 {
     try
     {
@@ -1169,6 +1206,10 @@ private void SetComboBoxValue(
         SavePasswordsToGameUserSettingsIni(
             config.ServerPassword,
             config.AdminPassword);
+
+        // =====================================================
+        // SAVE WHITELIST
+        // =====================================================
 
         SaveWhitelistFile(config);
 
@@ -1213,17 +1254,17 @@ private void SetComboBoxValue(
         if (config == null)
             return false;
 
-        // =====================================================
-        // LOAD PASSWORDS FROM GAMEUSERSETTINGS.INI FIRST
-        // =====================================================
+       // =====================================================
+// APPLY CONFIGURATION TO UI
+// =====================================================
 
-        LoadPasswordsFromGameUserSettingsIni(config);
+ApplyConfiguration(config);
 
-        // =====================================================
-        // APPLY EVERYTHING TO UI
-        // =====================================================
+// =====================================================
+// LOAD PASSWORDS FROM GAMEUSERSETTINGS.INI
+// =====================================================
 
-        ApplyConfiguration(config);
+LoadPasswordsFromGameUserSettingsIni(config);
 
         AppendConsole(
             "Saved server configuration loaded.");
@@ -5181,6 +5222,59 @@ public async Task StopServerForClusterAsync()
         !busy;
 
     UpdateProcessId();
+}
+
+private void SharedConfigurationSettings_Changed(
+    object sender,
+    RoutedEventArgs e)
+{
+    if (_loadingConfiguration)
+        return;
+
+    UpdateSharedConfigurationControls();
+
+    SaveConfiguration();
+}
+
+private void UpdateSharedConfigurationControls()
+{
+    bool enabled =
+        UseSharedConfigurationCheckBox?.IsChecked == true;
+
+    if (SharedConfigurationPathTextBox != null)
+    {
+        SharedConfigurationPathTextBox.IsEnabled =
+            enabled;
+    }
+
+    if (BrowseSharedConfigurationButton != null)
+    {
+        BrowseSharedConfigurationButton.IsEnabled =
+            enabled;
+    }
+}
+private void BrowseSharedConfigurationButton_Click(
+    object sender,
+    RoutedEventArgs e)
+{
+    using var dialog =
+        new System.Windows.Forms.FolderBrowserDialog();
+
+    dialog.Description =
+        "Select the shared ASA configuration folder.";
+
+    dialog.ShowNewFolderButton = true;
+
+    if (dialog.ShowDialog() ==
+        System.Windows.Forms.DialogResult.OK)
+    {
+        SharedConfigurationPathTextBox.Text =
+            dialog.SelectedPath;
+
+        UpdateSharedConfigurationControls();
+
+        SaveConfiguration();
+    }
 }
 
         // =========================================================

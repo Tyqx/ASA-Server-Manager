@@ -1,0 +1,1123 @@
+<UserControl x:Class="ASAServerManager.Pages.ServerMonitorPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#0F1115">
+
+    <UserControl.Resources>
+
+        <!-- ===================================================== -->
+        <!-- CARD STYLE -->
+        <!-- ===================================================== -->
+
+        <Style x:Key="MonitorCard"
+               TargetType="Border">
+
+            <Setter Property="Background"
+                    Value="#171B24"/>
+
+            <Setter Property="BorderBrush"
+                    Value="#292F3B"/>
+
+            <Setter Property="BorderThickness"
+                    Value="1"/>
+
+            <Setter Property="CornerRadius"
+                    Value="8"/>
+
+            <Setter Property="Padding"
+                    Value="20"/>
+
+        </Style>
+
+
+        <!-- ===================================================== -->
+        <!-- METRIC VALUE -->
+        <!-- ===================================================== -->
+
+        <Style x:Key="MetricValue"
+               TargetType="TextBlock">
+
+            <Setter Property="Foreground"
+                    Value="White"/>
+
+            <Setter Property="FontSize"
+                    Value="26"/>
+
+            <Setter Property="FontWeight"
+                    Value="Bold"/>
+
+        </Style>
+
+
+        <!-- ===================================================== -->
+        <!-- METRIC LABEL -->
+        <!-- ===================================================== -->
+
+        <Style x:Key="MetricLabel"
+               TargetType="TextBlock">
+
+            <Setter Property="Foreground"
+                    Value="#7F8A9A"/>
+
+            <Setter Property="FontSize"
+                    Value="12"/>
+
+            <Setter Property="FontWeight"
+                    Value="SemiBold"/>
+
+        </Style>
+
+
+        <!-- ===================================================== -->
+        <!-- GRAPH STAT -->
+        <!-- ===================================================== -->
+
+        <Style x:Key="GraphStatValue"
+               TargetType="TextBlock">
+
+            <Setter Property="Foreground"
+                    Value="White"/>
+
+            <Setter Property="FontSize"
+                    Value="13"/>
+
+            <Setter Property="FontWeight"
+                    Value="SemiBold"/>
+
+        </Style>
+
+
+        <Style x:Key="GraphStatLabel"
+               TargetType="TextBlock">
+
+            <Setter Property="Foreground"
+                    Value="#697386"/>
+
+            <Setter Property="FontSize"
+                    Value="9"/>
+
+        </Style>
+
+    </UserControl.Resources>
+
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled">
+
+        <Grid Margin="18">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+
+
+            <!-- ================================================= -->
+            <!-- HEADER -->
+            <!-- ================================================= -->
+
+            <StackPanel Grid.Row="0"
+                        Margin="0,0,0,18">
+
+                <TextBlock Text="SERVER MONITOR"
+                           Foreground="White"
+                           FontSize="22"
+                           FontWeight="Bold"/>
+
+                <TextBlock Text="Real-time server performance and health"
+                           Foreground="#7F8A9A"
+                           FontSize="13"
+                           Margin="0,5,0,0"/>
+
+            </StackPanel>
+
+
+            <!-- ================================================= -->
+            <!-- SERVER STATUS -->
+            <!-- ================================================= -->
+
+            <Border Grid.Row="1"
+                    Style="{StaticResource MonitorCard}"
+                    Margin="0,0,0,12">
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*"/>
+
+                        <ColumnDefinition Width="Auto"/>
+
+                    </Grid.ColumnDefinitions>
+
+
+                    <StackPanel>
+
+                        <TextBlock x:Name="ServerNameText"
+                                   Text="ASA SERVER"
+                                   Foreground="White"
+                                   FontSize="18"
+                                   FontWeight="Bold"/>
+
+                        <TextBlock Text="ArkAscendedServer.exe"
+                                   Foreground="#7F8A9A"
+                                   FontSize="12"
+                                   Margin="0,4,0,0"/>
+
+                    </StackPanel>
+
+
+                    <Border Grid.Column="1"
+                            Background="#142A1D"
+                            BorderBrush="#285C38"
+                            BorderThickness="1"
+                            CornerRadius="5"
+                            Padding="12,7">
+
+                        <TextBlock x:Name="ServerStatusText"
+                                   Text="● OFFLINE"
+                                   Foreground="#6FCF97"
+                                   FontWeight="Bold"
+                                   FontSize="12"/>
+
+                    </Border>
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- ================================================= -->
+            <!-- SERVER METRICS -->
+            <!-- ================================================= -->
+
+            <Grid Grid.Row="2"
+                  Margin="0,0,0,12">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+
+                <!-- SERVER CPU -->
+
+                <Border Grid.Column="0"
+                        Style="{StaticResource MonitorCard}"
+                        Margin="0,0,6,0">
+
+                    <StackPanel>
+
+                        <TextBlock Text="SERVER CPU"
+                                   Style="{StaticResource MetricLabel}"/>
+
+                        <TextBlock x:Name="ServerCpuValueText"
+                                   Text="0.0%"
+                                   Style="{StaticResource MetricValue}"
+                                   Margin="0,7,0,0"/>
+
+                        <TextBlock Text="ASA process"
+                                   Foreground="#697386"
+                                   FontSize="10"
+                                   Margin="0,2,0,0"/>
+
+                    </StackPanel>
+
+                </Border>
+
+
+                <!-- SERVER MEMORY -->
+
+                <Border Grid.Column="1"
+                        Style="{StaticResource MonitorCard}"
+                        Margin="6,0">
+
+                    <StackPanel>
+
+                        <TextBlock Text="SERVER MEMORY"
+                                   Style="{StaticResource MetricLabel}"/>
+
+                        <TextBlock x:Name="ServerMemoryValueText"
+                                   Text="0.0 GB"
+                                   Style="{StaticResource MetricValue}"
+                                   Margin="0,7,0,0"/>
+
+                        <TextBlock Text="ASA process"
+                                   Foreground="#697386"
+                                   FontSize="10"
+                                   Margin="0,2,0,0"/>
+
+                    </StackPanel>
+
+                </Border>
+
+
+                <!-- UPTIME -->
+
+                <Border Grid.Column="2"
+                        Style="{StaticResource MonitorCard}"
+                        Margin="6,0">
+
+                    <StackPanel>
+
+                        <TextBlock Text="UPTIME"
+                                   Style="{StaticResource MetricLabel}"/>
+
+                        <TextBlock x:Name="UptimeValueText"
+                                   Text="00:00:00"
+                                   Style="{StaticResource MetricValue}"
+                                   Margin="0,7,0,0"/>
+
+                    </StackPanel>
+
+                </Border>
+
+
+                <!-- PID -->
+
+                <Border Grid.Column="3"
+                        Style="{StaticResource MonitorCard}"
+                        Margin="6,0,0,0">
+
+                    <StackPanel>
+
+                        <TextBlock Text="PROCESS ID"
+                                   Style="{StaticResource MetricLabel}"/>
+
+                        <TextBlock x:Name="ProcessIdValueText"
+                                   Text="—"
+                                   Style="{StaticResource MetricValue}"
+                                   Margin="0,7,0,0"/>
+
+                    </StackPanel>
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- ================================================= -->
+            <!-- SYSTEM PERFORMANCE HEADER -->
+            <!-- ================================================= -->
+
+            <Border Grid.Row="3"
+                    Style="{StaticResource MonitorCard}"
+                    Margin="0,0,0,12"
+                    Padding="16">
+
+                <StackPanel>
+
+                    <TextBlock Text="SYSTEM PERFORMANCE"
+                               Foreground="White"
+                               FontSize="15"
+                               FontWeight="Bold"/>
+
+                    <TextBlock Text="Total hardware utilization across this computer"
+                               Foreground="#7F8A9A"
+                               FontSize="11"
+                               Margin="0,3,0,0"/>
+
+                </StackPanel>
+
+            </Border>
+
+
+            <!-- ================================================= -->
+            <!-- CPU + MEMORY GRAPHS -->
+            <!-- ================================================= -->
+
+            <Grid Grid.Row="4"
+                  Margin="0,0,0,12">
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="Auto"/>
+
+                    <RowDefinition Height="8"/>
+
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+
+                <!-- ============================================= -->
+                <!-- CPU GRAPH -->
+                <!-- ============================================= -->
+
+                <Border Grid.Row="0"
+                        Style="{StaticResource MonitorCard}"
+                        Padding="14">
+
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto"/>
+
+                            <!-- SMALLER GRAPH -->
+
+                            <RowDefinition Height="95"/>
+
+                            <RowDefinition Height="Auto"/>
+
+                        </Grid.RowDefinitions>
+
+
+                        <!-- HEADER -->
+
+                        <Grid Grid.Row="0">
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <StackPanel>
+
+                                <TextBlock Text="SYSTEM CPU"
+                                           Foreground="White"
+                                           FontSize="14"
+                                           FontWeight="Bold"/>
+
+                                <TextBlock Text="Total processor utilization"
+                                           Foreground="#7F8A9A"
+                                           FontSize="10"
+                                           Margin="0,2,0,0"/>
+
+                            </StackPanel>
+
+
+                            <TextBlock x:Name="SystemCpuCurrentText"
+                                       Grid.Column="1"
+                                       Text="0.0%"
+                                       Foreground="White"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       VerticalAlignment="Center"/>
+
+                        </Grid>
+
+
+                        <!-- GRAPH -->
+
+                        <Grid Grid.Row="1"
+                              Margin="0,8,0,3">
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="36"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <!-- Y AXIS -->
+
+                            <Grid Grid.Column="0">
+
+                                <TextBlock Text="100%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"/>
+
+                                <TextBlock Text="75%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Center"/>
+
+                                <TextBlock Text="50%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Center"/>
+
+                                <TextBlock Text="25%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Bottom"
+                                           Margin="0,0,0,14"/>
+
+                                <TextBlock Text="0%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Bottom"/>
+
+                            </Grid>
+
+
+                            <!-- GRAPH -->
+
+                            <Canvas x:Name="CpuGraphCanvas"
+                                    Grid.Column="1"
+                                    Background="#11151D"
+                                    ClipToBounds="True"
+                                    SizeChanged="GraphCanvas_SizeChanged">
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="0"
+                                      Y2="0"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="24"
+                                      Y2="24"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="47"
+                                      Y2="47"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="71"
+                                      Y2="71"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="94"
+                                      Y2="94"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Polyline x:Name="CpuGraphLine"
+                                          Stroke="#4DA3FF"
+                                          StrokeThickness="2"
+                                          Fill="Transparent"/>
+
+                            </Canvas>
+
+                        </Grid>
+
+
+                        <!-- STATS -->
+
+                        <Grid Grid.Row="2"
+                              Margin="36,2,0,0">
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <StackPanel>
+
+                                <TextBlock Text="CURRENT"
+                                           Style="{StaticResource GraphStatLabel}"/>
+
+                                <TextBlock x:Name="CpuCurrentStatText"
+                                           Text="0.0%"
+                                           Style="{StaticResource GraphStatValue}"/>
+
+                            </StackPanel>
+
+
+                            <StackPanel Grid.Column="1">
+
+                                <TextBlock Text="AVERAGE"
+                                           Style="{StaticResource GraphStatLabel}"/>
+
+                                <TextBlock x:Name="CpuAverageText"
+                                           Text="0.0%"
+                                           Style="{StaticResource GraphStatValue}"/>
+
+                            </StackPanel>
+
+
+                            <StackPanel Grid.Column="2">
+
+                                <TextBlock Text="PEAK"
+                                           Style="{StaticResource GraphStatLabel}"/>
+
+                                <TextBlock x:Name="CpuPeakText"
+                                           Text="0.0%"
+                                           Style="{StaticResource GraphStatValue}"/>
+
+                            </StackPanel>
+
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- ============================================= -->
+                <!-- MEMORY GRAPH -->
+                <!-- ============================================= -->
+
+                <Border Grid.Row="2"
+                        Style="{StaticResource MonitorCard}"
+                        Padding="14">
+
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto"/>
+
+                            <!-- SMALLER GRAPH -->
+
+                            <RowDefinition Height="95"/>
+
+                            <RowDefinition Height="Auto"/>
+
+                        </Grid.RowDefinitions>
+
+
+                        <!-- HEADER -->
+
+                        <Grid Grid.Row="0">
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <StackPanel>
+
+                                <TextBlock Text="SYSTEM MEMORY"
+                                           Foreground="White"
+                                           FontSize="14"
+                                           FontWeight="Bold"/>
+
+                                <TextBlock x:Name="SystemMemoryDescriptionText"
+                                           Text="Total physical RAM usage"
+                                           Foreground="#7F8A9A"
+                                           FontSize="10"
+                                           Margin="0,2,0,0"/>
+
+                            </StackPanel>
+
+
+                            <StackPanel Grid.Column="1"
+                                        HorizontalAlignment="Right">
+
+                                <TextBlock x:Name="SystemMemoryCurrentText"
+                                           Text="0.0%"
+                                           Foreground="White"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           HorizontalAlignment="Right"/>
+
+                                <TextBlock x:Name="SystemMemoryGBText"
+                                           Text="0.0 / 0.0 GB"
+                                           Foreground="#7F8A9A"
+                                           FontSize="9"
+                                           HorizontalAlignment="Right"/>
+
+                            </StackPanel>
+
+                        </Grid>
+
+
+                        <!-- GRAPH -->
+
+                        <Grid Grid.Row="1"
+                              Margin="0,8,0,3">
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="36"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <!-- Y AXIS -->
+
+                            <Grid Grid.Column="0">
+
+                                <TextBlock Text="100%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"/>
+
+                                <TextBlock Text="75%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Center"/>
+
+                                <TextBlock Text="50%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Center"/>
+
+                                <TextBlock Text="25%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Bottom"
+                                           Margin="0,0,0,14"/>
+
+                                <TextBlock Text="0%"
+                                           Foreground="#596273"
+                                           FontSize="8"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Bottom"/>
+
+                            </Grid>
+
+
+                            <!-- GRAPH -->
+
+                            <Canvas x:Name="MemoryGraphCanvas"
+                                    Grid.Column="1"
+                                    Background="#11151D"
+                                    ClipToBounds="True"
+                                    SizeChanged="GraphCanvas_SizeChanged">
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="0"
+                                      Y2="0"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="24"
+                                      Y2="24"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="47"
+                                      Y2="47"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="71"
+                                      Y2="71"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Line X1="0"
+                                      X2="1000"
+                                      Y1="94"
+                                      Y2="94"
+                                      Stroke="#252C38"
+                                      StrokeThickness="1"/>
+
+                                <Polyline x:Name="MemoryGraphLine"
+                                          Stroke="#A879FF"
+                                          StrokeThickness="2"
+                                          Fill="Transparent"/>
+
+                            </Canvas>
+
+                        </Grid>
+
+
+                        <!-- STATS -->
+
+                        <Grid Grid.Row="2"
+                              Margin="36,2,0,0">
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <StackPanel>
+
+                                <TextBlock Text="CURRENT"
+                                           Style="{StaticResource GraphStatLabel}"/>
+
+                                <TextBlock x:Name="MemoryCurrentStatText"
+                                           Text="0.0%"
+                                           Style="{StaticResource GraphStatValue}"/>
+
+                            </StackPanel>
+
+
+                            <StackPanel Grid.Column="1">
+
+                                <TextBlock Text="AVERAGE"
+                                           Style="{StaticResource GraphStatLabel}"/>
+
+                                <TextBlock x:Name="MemoryAverageText"
+                                           Text="0.0%"
+                                           Style="{StaticResource GraphStatValue}"/>
+
+                            </StackPanel>
+
+
+                            <StackPanel Grid.Column="2">
+
+                                <TextBlock Text="PEAK"
+                                           Style="{StaticResource GraphStatLabel}"/>
+
+                                <TextBlock x:Name="MemoryPeakText"
+                                           Text="0.0%"
+                                           Style="{StaticResource GraphStatValue}"/>
+
+                            </StackPanel>
+
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- ================================================= -->
+            <!-- DISK + NETWORK -->
+            <!-- ================================================= -->
+
+            <Grid Grid.Row="5"
+                  Margin="0,0,0,12">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+
+                <!-- ============================================= -->
+                <!-- DISK -->
+                <!-- ============================================= -->
+
+                <Border Grid.Column="0"
+                        Style="{StaticResource MonitorCard}"
+                        Margin="0,0,6,0"
+                        Padding="16">
+
+                    <StackPanel>
+
+                        <TextBlock Text="DISK USAGE"
+                                   Foreground="White"
+                                   FontSize="14"
+                                   FontWeight="Bold"/>
+
+                        <TextBlock Text="System drive storage"
+                                   Foreground="#7F8A9A"
+                                   FontSize="10"
+                                   Margin="0,2,0,10"/>
+
+
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <StackPanel>
+
+                                <TextBlock x:Name="DiskUsedText"
+                                           Text="0.0 GB used"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="Bold"/>
+
+                                <TextBlock x:Name="DiskTotalText"
+                                           Text="0.0 GB total"
+                                           Foreground="#7F8A9A"
+                                           FontSize="10"
+                                           Margin="0,3,0,0"/>
+
+                            </StackPanel>
+
+
+                            <TextBlock x:Name="DiskPercentText"
+                                       Grid.Column="1"
+                                       Text="0.0%"
+                                       Foreground="White"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       VerticalAlignment="Center"/>
+
+                        </Grid>
+
+
+                        <ProgressBar x:Name="DiskProgressBar"
+                                     Height="6"
+                                     Minimum="0"
+                                     Maximum="100"
+                                     Value="0"
+                                     Margin="0,10,0,0"/>
+
+                    </StackPanel>
+
+                </Border>
+
+
+                <!-- ============================================= -->
+                <!-- NETWORK -->
+                <!-- ============================================= -->
+
+                <Border Grid.Column="1"
+                        Style="{StaticResource MonitorCard}"
+                        Margin="6,0,0,0"
+                        Padding="16">
+
+                    <StackPanel>
+
+                        <TextBlock Text="NETWORK"
+                                   Foreground="White"
+                                   FontSize="14"
+                                   FontWeight="Bold"/>
+
+                        <TextBlock Text="System network activity"
+                                   Foreground="#7F8A9A"
+                                   FontSize="10"
+                                   Margin="0,2,0,10"/>
+
+
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <!-- DOWNLOAD -->
+
+                            <StackPanel>
+
+                                <TextBlock Text="DOWNLOAD"
+                                           Style="{StaticResource GraphStatLabel}"/>
+
+                                <TextBlock x:Name="NetworkDownloadText"
+                                           Text="0.0 KB/s"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="Bold"
+                                           Margin="0,2,0,0"/>
+
+                                <TextBlock x:Name="NetworkDownloadTotalText"
+                                           Text="0.0 MB total"
+                                           Foreground="#697386"
+                                           FontSize="9"
+                                           Margin="0,2,0,0"/>
+
+                            </StackPanel>
+
+
+                            <!-- UPLOAD -->
+
+                            <StackPanel Grid.Column="1">
+
+                                <TextBlock Text="UPLOAD"
+                                           Style="{StaticResource GraphStatLabel}"/>
+
+                                <TextBlock x:Name="NetworkUploadText"
+                                           Text="0.0 KB/s"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="Bold"
+                                           Margin="0,2,0,0"/>
+
+                                <TextBlock x:Name="NetworkUploadTotalText"
+                                           Text="0.0 MB total"
+                                           Foreground="#697386"
+                                           FontSize="9"
+                                           Margin="0,2,0,0"/>
+
+                            </StackPanel>
+
+                        </Grid>
+
+                    </StackPanel>
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- ================================================= -->
+            <!-- SERVER HEALTH -->
+            <!-- ================================================= -->
+
+            <Border Grid.Row="6"
+                    Style="{StaticResource MonitorCard}"
+                    Margin="0,0,0,12">
+
+                <StackPanel>
+
+                    <TextBlock Text="SERVER HEALTH"
+                               Foreground="White"
+                               FontSize="15"
+                               FontWeight="Bold"/>
+
+                    <TextBlock x:Name="HealthText"
+                               Text="Server is offline."
+                               Foreground="#7F8A9A"
+                               FontSize="13"
+                               Margin="0,7,0,0"/>
+
+                </StackPanel>
+
+            </Border>
+
+
+            <!-- ================================================= -->
+            <!-- SYSTEM INFORMATION -->
+            <!-- ================================================= -->
+
+            <Border Grid.Row="7"
+                    Style="{StaticResource MonitorCard}"
+                    Margin="0,0,0,15">
+
+                <StackPanel>
+
+                    <TextBlock Text="SYSTEM INFORMATION"
+                               Foreground="White"
+                               FontSize="15"
+                               FontWeight="Bold"/>
+
+
+                    <Grid Margin="0,14,0,0">
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="180"/>
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+
+                        </Grid.RowDefinitions>
+
+
+                        <!-- PROCESSOR -->
+
+                        <TextBlock Text="Processor Threads"
+                                   Foreground="#7F8A9A"/>
+
+                        <TextBlock x:Name="ProcessorCountText"
+                                   Grid.Column="1"
+                                   Text="—"
+                                   Foreground="White"/>
+
+
+                        <!-- MONITORING -->
+
+                        <TextBlock Text="Monitoring Interval"
+                                   Grid.Row="1"
+                                   Foreground="#7F8A9A"
+                                   Margin="0,10,0,0"/>
+
+                        <TextBlock x:Name="MonitoringIntervalText"
+                                   Grid.Row="1"
+                                   Grid.Column="1"
+                                   Text="2 seconds"
+                                   Foreground="White"
+                                   Margin="0,10,0,0"/>
+
+
+                        <!-- TOTAL MEMORY -->
+
+                        <TextBlock Text="Total Physical RAM"
+                                   Grid.Row="2"
+                                   Foreground="#7F8A9A"
+                                   Margin="0,10,0,0"/>
+
+                        <TextBlock x:Name="TotalMemoryText"
+                                   Grid.Row="2"
+                                   Grid.Column="1"
+                                   Text="—"
+                                   Foreground="White"
+                                   Margin="0,10,0,0"/>
+
+
+                        <!-- MEMORY USAGE -->
+
+                        <TextBlock Text="Memory Usage"
+                                   Grid.Row="3"
+                                   Foreground="#7F8A9A"
+                                   Margin="0,10,0,0"/>
+
+                        <TextBlock x:Name="SystemMemoryInfoText"
+                                   Grid.Row="3"
+                                   Grid.Column="1"
+                                   Text="—"
+                                   Foreground="White"
+                                   Margin="0,10,0,0"/>
+
+
+                        <!-- DISK -->
+
+                        <TextBlock Text="System Drive"
+                                   Grid.Row="4"
+                                   Foreground="#7F8A9A"
+                                   Margin="0,10,0,0"/>
+
+                        <TextBlock x:Name="SystemDriveText"
+                                   Grid.Row="4"
+                                   Grid.Column="1"
+                                   Text="—"
+                                   Foreground="White"
+                                   Margin="0,10,0,0"/>
+
+                    </Grid>
+
+                </StackPanel>
+
+            </Border>
+
+        </Grid>
+
+    </ScrollViewer>
+
+</UserControl>
